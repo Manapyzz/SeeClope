@@ -1,0 +1,236 @@
+/*---FONT---*/
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../font/Montserrat-Regular.otf);
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(../font/Montserrat-Light.otf);
+}
+
+@font-face {
+  font-family: MontserratUltraLight;
+  src: url(../font/Montserrat-UltraLight.otf);
+}
+
+@font-face {
+  font-family: MontserratHairline;
+  src: url(../font/Montserrat-Hairline.otf);
+}
+
+/*---MENU HAMBURGER---*/
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 17% 0 5% 10%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+
+#sidebar-btn span {
+  height: 3px;
+  background: #27cf9f;
+  margin-bottom: 20%;
+  display: block;
+}
+
+#sidebar {
+  background: #fff;
+  width: 160px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: -160px;
+  top: 0;
+  transition: left 0.3s linear;
+  font-family: MontserratRegular;
+}
+
+#sidebar.visible{
+  left: 0;
+  transition: left 0.3s linear;
+  z-index: 2;
+}
+
+/*---HEADER---*/
+
+.blockLogo{
+  width: 10%;
+  height: 40px;
+  display: inline-block;
+  margin: 6% 6% 6% 42%;
+}
+
+.blockMarket{
+  width: 10%;
+  height: 40px;
+  display: inline-block;
+  margin-left: 24%;
+}
+
+.sidebarImg{
+  width: 8%;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.textMenu{
+  margin-left: 13%;
+  font-size: 0.8rem;
+}
+
+/*---FOOTER---*/
+
+.footer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #27cf9f;
+  font-family: MontserratRegular;
+  color : #fff;
+}
+
+.footerTitle{
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 5% 5% 5%;
+}
+
+.lineLeft{
+  display: inline-block;
+  width: 22%;
+  border: 1px solid #fff;
+  margin: 0 0 -4% 5%;
+}
+
+.lineRight{
+  display: inline-block;
+  width: 22%;
+  border: 1px solid #fff;
+  float: right;
+  margin: -8% 5% 0 0;;
+}
+
+.textLink{
+  font-size: 0.6rem;
+  margin-left: 12%;
+  margin-bottom: 4%;
+  display: inline-block;
+}
+
+.down{
+  margin-left: 28%;
+}
+
+.textFollow{
+  width: 11%;
+  display: inline-block;
+  margin-left: 26%;
+  margin-bottom: 8%;
+}
+
+.mention{
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/*---SECTION---*/
+
+.container{
+  position: relative;
+}
+
+/*---FIRST ARTICLE---*/
+.first{
+  display: inline-block;
+}
+
+.blockArticle{
+  position: relative;
+}
+
+.title{
+  position: absolute;
+  z-index: 1;
+  top: 11%;
+  left: 35%;
+  font-family: MontserratRegular;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.text{
+  position: absolute;
+  bottom: 43%;
+  left: 12%;
+  font-family: MontserratUltraLight;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.secondText{
+  font-family: MontserratHairline;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 5%;
+}
+
+/*---SECOND ARTICLE---*/
+
+.second{
+  display: inline-block;
+}
+
+.blockImgGlass{
+  font-size: 0;
+}
+
+.blockImgGlass > .imgGlass{
+  display: inline-block;
+  width: 49%;
+  position: relative;
+}
+
+.textGlass{
+  display: table-cell;
+  position: absolute;
+  z-index: 1;
+  top: 41%;
+  left: 27%;
+  font-size: 1rem;
+  font-family: MontserratRegular;
+  color: #fff;
+}
+
+.sun{
+  display: table-cell;
+  vertical-align: middle;
+  height: 157px;
+}
+
+/*---THIRD ARTICLE---*/
+
+.third{
+  display: inline-block;
+}
+
+.thirdText{
+  font-family: MontserratHairline;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 5%;
+}
+
+.imgApp{
+  width: 35%;
+  margin-left: 10%;
+  margin-bottom: 7%;
+  display: inline-block;
+}

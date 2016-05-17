@@ -1,0 +1,38 @@
+{% extends 'UserBundle:Base:homepage.html.twig' %}
+
+{% block container %}
+<section>
+    <article class="first second third">
+        <div class="blockArticle">
+            <img src="{{ asset('assets/img/img-first-article.jpg') }}">
+            <h1 class="title">SeeClop</h1>
+                <p class="text">Chez nous acheté plus qu'une<br>
+                    demi lunette
+                </p>
+        </div>
+            <p class="secondText">Trouver la paire de lunette de vos rêve<br>
+            des maintenant
+            </p>
+    </article>
+    <article class="first second third">
+        <div class="blockImgGlass">
+            <div class="imgGlass optical"><img src="{{ asset('assets/img/optique-img.jpg') }}"><div class="textGlass">OPTIQUE</div></div>
+            <div class="imgGlass sunGlass"><img src="{{ asset('assets/img/solaire-img.jpg') }}"><div class="textGlass">SOLAIRE</div></div>
+            <div class="imgGlass sunOpticalGlass"><img src="{{ asset('assets/img/solaire-optique-img.jpg') }}"><div class="textGlass sun">OPTIQUE SOLAIRE</div></div>
+            <div class="imgGlass fantasy"><img src="{{ asset('assets/img/fantaisie-img.jpg') }}"><div class="textGlass">FANTAISIE</div></div>
+        </div>
+    </article>
+    <article class="first second third">
+        <p class="thirdText">N'hésité pas à télécharger l'application<br>
+        afin de rester informé des derniers<br>
+        sorties et des nouveautés.
+        </p>
+        <div class="imgApp"><img src="{{ asset('assets/img/app-store.jpg') }}"></div>
+        <div class="imgApp"><img src="{{ asset('assets/img/google-play.jpg') }}"></div>
+    </article>
+</section>
+{% endblock %}
+
+
+
+

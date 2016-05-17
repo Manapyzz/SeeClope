@@ -1,0 +1,40 @@
+<header class="header">
+    <nav class='menu'>
+        <div id="sidebar">
+            <ul>
+                <li class="sidebarLink"><a href="/">
+                        <div class="sidebarImg"><img src="{{ asset('assets/img/menuHome.jpg') }}" alt="home"></div><span class="textMenu">Accueil</span></a>
+                </li>
+                {% if app.user == false %}
+                    <li class="sidebarLink" id="login"><a href="#">
+                            <div class="sidebarImg"><img src="{{ asset('assets/img/menuLogin.jpg') }}" alt="login"></div><span class="textMenu">Connexion</span></a>
+                    </li>
+                    <li class="sidebarLink" id="register"><a href="#">
+                            <div class="sidebarImg"><img src="{{ asset('assets/img/menuLogin.jpg') }}" alt="register"></div><span class="textMenu">Inscription</span></a>
+                    </li>
+                {% endif %}
+                {% if ((is_granted("IS_AUTHENTICATED_REMEMBERED")) or (is_granted("IS_AUTHENTICATED_FULLY"))) %}
+                    <li><a href="/profile/show/{{ app.user.username|lower }}">
+                            <div class="sidebarImg"><img src="{{ asset('assets/img/menuLogin.jpg') }}" alt="Profile"></div><span class="textMenu">Profil</span></a>
+                    </li>
+                    <li><a href="#">
+                            <div class="sidebarImg"><img src="{{ asset('assets/img/menuLogin.jpg') }}" alt="Logout"></div><span class="textMenu">Déconnection</span></a>
+                    </li>
+                {% endif %}
+                <li class="sidebarLink"><a href="#">
+                        <div class="sidebarImg"><img src="{{ asset('assets/img/menuSearch.jpg') }}" alt="search"></div><span class="textMenu">Recherche</span></a>
+                </li>
+                <li class="sidebarLink"><a href="#">
+                        <div class="sidebarImg"><img src="{{ asset('assets/img/menuSell.png') }}" alt="sell"></div><span class="textMenu">Vendre</span></a>
+                </li>
+            </ul>
+            <div id="sidebar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="blockLogo"><a href="/"><img src="{{ asset('assets/img/logo.png') }}"></a></div>
+        <div class="blockMarket"><a href="#"><img src="{{ asset('assets/img/market.jpg') }}"></a></div>
+    </nav>
+</header>
