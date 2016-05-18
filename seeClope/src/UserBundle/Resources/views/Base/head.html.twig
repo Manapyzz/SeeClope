@@ -1,0 +1,15 @@
+{% block head %}
+    <!DOCTYPE html>
+    <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}SeeClop{% endblock %}</title>
+    {% block javascripts %}
+        <script src="{{ asset("assets/js/jquery-2.2.3.min.js") }}"></script>
+    {% endblock %}
+    <script src="{{ asset("assets/js/script.js") }}"></script>
+    <link rel="stylesheet" href={{ asset('assets/css/reset.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/css/style.css') }}>
+</head>
+{% endblock %}
