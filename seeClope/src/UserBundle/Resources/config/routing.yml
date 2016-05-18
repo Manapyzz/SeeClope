@@ -12,3 +12,11 @@ login:
 
 logout:
     path: /logout
+
+show_profile:
+    path: /profile/show/{username}
+    defaults: { _controller: UserBundle:Profile:show}
+
+edit_profile:
+    path: /profile/edit
+    defaults: { _controller: UserBundle:Profile:edit}

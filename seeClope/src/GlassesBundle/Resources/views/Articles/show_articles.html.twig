@@ -1,0 +1,17 @@
+{{ form_start(searchForm) }}
+{{ form_widget(searchForm.searchField) }}
+{{ form_end(searchForm )}}
+
+{% for item in articles %}
+    <h2>{{ item.brand }}</h2><br>
+    Forme: {{ item.shape }}<br>
+    Correction Oeil Gauche: {{ item.leftcorrection }}<br>
+    Correction Oeil Droit: {{ item.shape }}<br>
+    Type de Verre: {{ item.glasstype }}<br>
+    Couleur: {{ item.color}}<br><br>
+    <h4>Les Dimensions:</h4>
+    Diamètre du Verre: {{ item.glassdiameter }}<br>
+    Pont des lunettes: {{ item.glassbridge }}<br>
+    Tailles des branches: {{ item.glassarm }}<br><br>
+    Offre par : <a href="profile/show/{{ item.user.username }}">{{ item.user.username|upper }}</a>
+{% endfor %}

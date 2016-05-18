@@ -1,0 +1,11 @@
+glasses_homepage:
+    path:     /sell
+    defaults: { _controller: GlassesBundle:Seller:sell }
+
+glasses_show_article:
+    path: /articles
+    defaults: { _controller: GlassesBundle:Articles:show }
+
+glasses_search:
+    path: /search
+    defaults: { _controller: GlassesBundle:Search:search }

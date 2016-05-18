@@ -32,3 +32,10 @@ EntityBundle\Entity\User:
         lastname:
             type: string
             length: 60
+
+        imageFile :
+            - File:
+                 maxSize: 6000000
+        imageName :
+            type : string
+            length : 255

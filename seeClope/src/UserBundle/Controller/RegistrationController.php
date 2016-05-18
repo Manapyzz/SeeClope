@@ -7,6 +7,8 @@ use EntityBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+
 
 class RegistrationController extends Controller
 {
@@ -14,6 +16,8 @@ class RegistrationController extends Controller
     {
         // 1) build the form
         $user = new User();
+        $user->setImageName('DefaultImage.png');
+        $user->setImageFile();
         $form = $this->createForm(UserType::class, $user);
 
         // 2) handle the submit (will only happen on POST)
@@ -29,15 +33,22 @@ class RegistrationController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
-
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
-            
+            $this->authenticateUser($user);
         }
 
         return $this->render(
             'UserBundle:Register:registerpage.html.twig',
             array('form' => $form->createView())
         );
+    }
+
+    private function authenticateUser(User $user)
+    {
+        $providerKey = 'main'; // your firewall name
+        $token = new UsernamePasswordToken($user, null, $providerKey, $user->getRoles());
+
+        $this->container->get('security.context')->setToken($token);
     }
 }
