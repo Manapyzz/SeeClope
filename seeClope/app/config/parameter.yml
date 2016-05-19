@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: seeclope
+    database_user: urnotwrex
+    database_password: Amonamarth66
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: cbb5896dc033e379481b2122ee0020d1101159e9
