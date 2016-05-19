@@ -280,7 +280,7 @@ class User implements UserInterface, \Serializable
             // otherwise the event listeners won't be called and the file is lost
             $this->updatedAt = new \DateTime('now');
         } elseif(!$image) {
-            $image = '/Users/AlexPMac/OneDriveBusiness/Web Developer/Cours/Web development/AllGitHubProjects/HamsterHubProject/HamsterHubProject/app/../web/assets/images//defaultImage.png';
+            $image = '/Users/AlexPMac/OneDriveBusiness/Web Developer/Cours/Web development/AllGitHubProjects/SeeClope/seeClope/app/../web/assets/images//defaultImage.png';
             $this->imageFile = $image;
         }
         return $this;

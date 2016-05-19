@@ -1,0 +1,29 @@
+EntityBundle\Entity\ProfileComment:
+    type: entity
+    table: null
+    repositoryClass: EntityBundle\Repository\ProfileCommentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+
+    fields:
+        rating:
+            type: integer
+            length: 10
+        review:
+            type: string
+            length: 300
+
+        profileId:
+            type: integer
+
+    manyToOne:
+        user:
+            targetEntity: EntityBundle\Entity\User
+            joinColumn:
+                name: user_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

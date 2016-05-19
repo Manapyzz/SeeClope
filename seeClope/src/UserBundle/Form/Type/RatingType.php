@@ -1,25 +1,22 @@
 <?php
 
-namespace GlassesBundle\Form\Type;
+namespace UserBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
-class BrandType extends AbstractType
+class RatingType extends AbstractType
 {
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'choices' => array(
-                'Ray Ban' => 'Ray Ban',
-                'Oliver People' => 'Oliver People',
-                'Dior' => 'Dior',
-                'Calvin Klein' => 'Calvin Klein',
-                'Gucci' => 'Gucci',
-                'Paul & Joe' => 'Paul & Joe',
-                'Paul Smith' => 'Paul Smith',
-                'IKKS' => 'Oakley',
+                1 => 1,
+                2 => 2,
+                3 => 3,
+                4 => 4,
+                5 => 5,
             )
         ));
     }

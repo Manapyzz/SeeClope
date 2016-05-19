@@ -3,7 +3,7 @@
 namespace GlassesBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -14,7 +14,9 @@ class SearchType extends AbstractType
     {
         $builder
             ->setAction('/search')
-            ->add('searchField', TextType::class)
+            ->add('brand', BrandType::class)
+            ->add('leftcorrection', IntegerType::class)
+            ->add('rightcorrection', IntegerType::class)
             ->add('search', SubmitType::class );
     }
 

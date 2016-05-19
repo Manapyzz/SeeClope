@@ -10,15 +10,22 @@ class SearchController extends Controller
 {
     public function searchAction(Request $request)
     {
-        $bloublou = $request->get('search');
-        $roger = $bloublou['searchField'];
+        $getData = $request->get('search');
+        $brand = $getData['brand'];
 
-        $articles = $this->getDoctrine()->getManager()
+
+
+        if(isset($brand))
+        {
+            $searchBrand = $this->getDoctrine()->getManager()
             ->getRepository('EntityBundle:Glasses')
-            ->findOneByBrand($roger);
+            ->findByBrand($brand);
 
-        var_dump($articles->getBrand());
-        
-        return new Response('fjiapjzfoa');
+            for($i = 0; $i < count($searchBrand); $i++) {
+                var_dump($searchBrand[$i]->getBrand());
+                var_dump($searchBrand[$i]->getColor());
+            }
+        }
+
     }
 }

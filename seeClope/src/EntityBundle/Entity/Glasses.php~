@@ -304,40 +304,12 @@ class Glasses
     {
         return $this->glassarm;
     }
-    /**
-     * @var string
-     */
-    private $manyToOne;
 
-
-    /**
-     * Set manyToOne
-     *
-     * @param string $manyToOne
-     * @return Glasses
-     */
-    public function setManyToOne($manyToOne)
-    {
-        $this->manyToOne = $manyToOne;
-
-        return $this;
-    }
-
-    /**
-     * Get manyToOne
-     *
-     * @return string 
-     */
-    public function getManyToOne()
-    {
-        return $this->manyToOne;
-    }
     /**
      * @var \EntityBundle\Entity\User
      */
     private $user;
-
-
+    
     /**
      * Set user
      *
