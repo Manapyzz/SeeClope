@@ -1,0 +1,441 @@
+/*---FONT---*/
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../font/Montserrat-Regular.otf);
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(../font/Montserrat-Light.otf);
+}
+
+@font-face {
+  font-family: MontserratUltraLight;
+  src: url(../font/Montserrat-UltraLight.otf);
+}
+
+@font-face {
+  font-family: MontserratHairline;
+  src: url(../font/Montserrat-Hairline.otf);
+}
+
+/*---HEADER---*/
+
+.menu {
+  height: 90px;
+  line-height: 90px;
+}
+
+
+.blockLogo{
+  width: 25%;
+  display: inline-block;
+  margin-left: 38%;
+}
+
+.blockMarket{
+  width: 10%;
+  display: inline-block;
+  margin-left: 18%;
+}
+
+.sidebarImg{
+  width: 8%;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.textMenu{
+  margin-left: 13%;
+  font-size: 0.8rem;
+}
+
+/*---MENU HAMBURGER---*/
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 17% 0 5% 10%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+
+#sidebar-btn span {
+  height: 3px;
+  background: #27cf9f;
+  margin-bottom: 20%;
+  display: block;
+}
+
+#sidebar {
+  background: #fff;
+  width: 160px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: -160px;
+  top: 0;
+  transition: left 0.3s linear;
+  font-family: MontserratRegular;
+}
+
+#sidebar.visible{
+  left: 0;
+  transition: left 0.3s linear;
+  z-index: 2;
+}
+
+/*---MAIN---*/
+
+.container{
+  position: relative;
+}
+
+/*---FIRST SECTION---*/
+.first{
+  display: inline-block;
+}
+
+.blockArticle{
+  position: relative;
+}
+
+.title{
+  position: absolute;
+  margin-top: 16px;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: MontserratRegular;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.text{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 235px;
+  transform: translate(-50%, 60%);
+  font-family: MontserratUltraLight;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.secondText{
+  font-family: MontserratHairline;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 5%;
+}
+
+/*---SECOND SECTION---*/
+
+.titleSelect{
+  font-family: MontserratRegular;
+  font-size: 1.1rem;
+  color: #5b5b5b;
+  text-align: center;
+}
+
+.select{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+.right{
+
+}
+
+.left{
+
+}
+
+.selectImg{
+  width: 50%;
+}
+
+.selectProfilImg{
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  border: 1px solid transparent;
+  border-radius: 38px;
+  margin-left: 5%;
+}
+
+.selectPseudo{
+  display: inline-block;
+  font-family: MontserratLight;
+  font-size: 0.9rem;
+  color: #5b5b5b;
+}
+
+.selectPrice{
+  display: inline-block;
+  background-color: #06c790;
+  font-family: MontserratLight;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 55px;
+}
+
+.selectBrand{
+  display: inline-block;
+  font-family: MontserratLight;
+  font-size: 0.9rem;
+  color: #5d5d5d;
+}
+
+/*---THIRD SECTION---*/
+
+/*---FOR SECTION---*/
+
+.second{
+  display: inline-block;
+}
+
+.imgGlass{
+  display: inline-block;
+  width: 49%;
+  position: relative;
+}
+
+.textGlass{
+  display: table-cell;
+  position: absolute;
+  z-index: 1;
+  top: 41%;
+  left: 27%;
+  font-size: 1rem;
+  font-family: MontserratRegular;
+  color: #fff;
+}
+
+.sun{
+  display: table-cell;
+  vertical-align: middle;
+  height: 157px;
+}
+
+/*---FIVE ARTICLE---*/
+
+.third{
+  display: inline-block;
+}
+
+.thirdText{
+  font-family: MontserratHairline;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 5%;
+}
+
+.imgApp{
+  width: 35%;
+  margin-left: 10%;
+  margin-bottom: 7%;
+  display: inline-block;
+}
+
+/*---FOOTER---*/
+
+.footer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #27cf9f;
+  font-family: MontserratRegular;
+  color : #fff;
+}
+
+.footerTitle{
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 5% 5% 5%;
+  display: none;
+}
+
+.lineLeft{
+  display: inline-block;
+  width: 90%;
+  border: 1px solid #fff;
+  margin: 0 0 -24% 5%;
+}
+
+.lineRight{
+  display: none;
+  width: 90%;
+  border: 1px solid #fff;
+  float: right;
+  margin: -8% 5% 0 0;;
+}
+
+.textLink{
+  font-size: 0.6rem;
+  /*margin-left: 12%;*/
+  margin-bottom: 4%;
+  display: none;
+}
+
+.down{
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.textFollow{
+  width: 11%;
+  display: none;
+  margin-left: 26%;
+  margin-bottom: 8%;
+}
+
+.mention{
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+
+/*---SEARCH PAGE---*/
+
+.titleSearch{
+  position: absolute;
+  z-index: 1;
+  top: 47%;
+  left: 28%;
+  font-family: MontserratRegular;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.blockSearch{
+  background: #fff;
+  margin: 10% 0 10% 25%;
+  font-family: MontserratRegular;
+}
+
+.choice{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  margin-right: 15%;
+  margin-left: 10%;
+  padding: 5% 0;
+  border-bottom: 1px solid #e2e1e1;
+  color: #676767;
+  display: inline-block;
+}
+
+.fa-chevron-up{
+  color: #8e8e8e;
+  margin-left: 23%;
+}
+
+.fa-chevron-down{
+  color : #45d5ac;
+  margin-left: 23%;
+}
+
+.blockOptical{
+  display: inline-block;
+  background-color: #5b5b5b;
+  height: 90px;
+  width: 90px;
+}
+
+.blockSun{
+  display: inline-block;
+  background-color: #5b5b5b;
+  height: 90px;
+  width: 90px;
+}
+
+.blockOpticalSun{
+  display: inline-block;
+  background-color: #5b5b5b;
+  height: 90px;
+  width: 90px;
+}
+
+.blockFantasy{
+  display: inline-block;
+  background-color: #5b5b5b;
+  height: 90px;
+  width: 90px;
+}
+
+.submitSearch{
+  margin: 10% 10% 10% 26%;
+  width: 50%;
+  padding: 6% 1% 6% 1%;
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular;
+}
+
+/*---LOGIN---*/
+
+.titleLogin{
+  font-family: MontserratRegular;
+  color: #757272;
+  margin: 40px 0px 40px 95px;
+  font-size: 1.3rem;
+}
+
+.fieldEmail{
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px;
+}
+
+.fieldPassword{
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 10px 65px;
+}
+
+.blockBox{
+  display: block;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
+.lostPassword{
+  font-family: MontserratHairline;
+  display: inline-block;
+  color: #d0d0d0;
+  font-size: 0.8rem;
+  margin-left: 80px;
+}
+
+.fieldSubmit{
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular;
+  padding: 10px 50px 10px 50px;
+  margin: 40px 5px 60px 65px;
+}
+
+
+
+@media (min-width: 641px){
+
+}

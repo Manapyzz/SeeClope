@@ -10,22 +10,6 @@ class SearchController extends Controller
 {
     public function searchAction(Request $request)
     {
-        $getData = $request->get('search');
-        $brand = $getData['brand'];
-
-
-
-        if(isset($brand))
-        {
-            $searchBrand = $this->getDoctrine()->getManager()
-            ->getRepository('EntityBundle:Glasses')
-            ->findByBrand($brand);
-
-            for($i = 0; $i < count($searchBrand); $i++) {
-                var_dump($searchBrand[$i]->getBrand());
-                var_dump($searchBrand[$i]->getColor());
-            }
-        }
-
+        return $this->render('GlassesBundle:Search:search.html.twig');
     }
 }

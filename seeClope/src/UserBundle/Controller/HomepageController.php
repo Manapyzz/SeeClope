@@ -9,4 +9,9 @@ class HomepageController extends Controller
     {
         return $this->render('UserBundle:Homepage:homepage.html.twig');
     }
+
+    public function searchAction()
+    {
+        return $this->render('UserBundle:Search:search.html.twig');
+    }
 }
