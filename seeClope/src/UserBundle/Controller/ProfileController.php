@@ -36,13 +36,12 @@ class ProfileController extends Controller
             $em->flush();
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
+            return $this->redirectToRoute('show_profile', array('username' => $username));
         }
 
         $userComment = $this->getDoctrine()->getManager()
             ->getRepository('EntityBundle:ProfileComment')
-            ->findOneByProfileId($userProfile->getId());
-
-        var_dump($userComment);
+            ->findByProfileId($userProfile->getId());
 
         return $this->render(
             'UserBundle:Profile:show_profile.html.twig', array(

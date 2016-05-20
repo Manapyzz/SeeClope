@@ -13,6 +13,9 @@ EntityBundle\Entity\Glasses:
         brand:
             type: string
             length: 100
+        sex:
+            type: string
+            length: 100
         shape:
             type: string
             length: 100
@@ -37,6 +40,27 @@ EntityBundle\Entity\Glasses:
         color:
             type: string
             length: 100
+        price:
+            type: integer
+            length: 100
+        firstImageFile :
+            - File:
+                 maxSize: 6000000
+        firstImageName :
+            type : string
+            length : 255
+        secondImageFile :
+            - File:
+                 maxSize: 6000000
+        secondImageName :
+            type : string
+            length : 255
+        thirdImageFile :
+            - File:
+                 maxSize: 6000000
+        thirdImageName :
+            type : string
+            length : 255
 
     manyToOne:
         user:

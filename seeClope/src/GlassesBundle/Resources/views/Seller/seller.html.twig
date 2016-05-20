@@ -1,7 +1,6 @@
 {{ form_start(form) }}
-    {{ form_label(form.brand) }}
-    {{ form_errors(form.brand) }}
-    {{ form_widget(form.brand) }}
+    {{ form_row(form.brand) }}
+    {{ form_row(form.sex) }}
     {{ form_row(form.shape) }}
     {{ form_row(form.leftcorrection) }}
     {{ form_row(form.rightcorrection) }}
@@ -10,5 +9,6 @@
     {{ form_row(form.glassarm) }}
     {{ form_row(form.glasstype) }}
     {{ form_row(form.color) }}
+    {{ form_row(form.price) }}
 <button type="submit">Put Your Item on Sale</button>
 {{ form_end(form) }}

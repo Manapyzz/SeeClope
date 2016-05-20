@@ -3,15 +3,24 @@
 Nom: {{ profile.lastname }} <br>
 Prénom: {{ profile.firstname }} <br>
 Email: {{ profile.email }} <br>
-<img width="200px" src="/assets/images/profile/{{ profile.imageName }}">
+<img width="200px" src="/assets/images/profile/{{ profile.imageName }}"><br><br>
 
-{{ form_start(commentForm) }}
-{{ form_end(commentForm) }}
+{% if profile.id != app.user.id %}
+    {{ form_start(commentForm) }}
+    {{ form_end(commentForm) }}
+{% endif %}
 
 <h4>Commentaires:</h4>
 
-Rating: {{ userComment.rating }}
-{{ userComment.review }}
-Posted By {{ userComment.user.username }}
+
+{% if userComment|length > 0 %}
+        {% for item in userComment %}
+            Rating: {{ item.rating }}<br>
+            Review: {{ item.review }}<br>
+            Posted By <a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a><br><br>
+        {% endfor %}
+{% elseif userComment|length == 0 %}
+    This User has no review
+{% endif %}
 
 

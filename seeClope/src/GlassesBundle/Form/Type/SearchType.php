@@ -13,10 +13,16 @@ class SearchType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->setAction('/search')
-            ->add('brand', BrandType::class)
-            ->add('leftcorrection', IntegerType::class)
-            ->add('rightcorrection', IntegerType::class)
+            ->add('brand', BrandSearchType::class)
+            ->add('leftcorrection', IntegerType::class, array(
+                'required' => false
+            ))
+            ->add('rightcorrection', IntegerType::class, array(
+                'required' => false
+            ))
+            ->add('glasstype', IntegerType::class, array(
+                'required' => false
+            ))
             ->add('search', SubmitType::class );
     }
 

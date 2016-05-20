@@ -135,10 +135,4 @@ class ProfileComment
     {
         return $this->profileId;
     }
-    /**
-     * @var integer
-     */
-    private $profileid;
-
-
 }

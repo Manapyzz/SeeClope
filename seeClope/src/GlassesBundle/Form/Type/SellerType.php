@@ -14,6 +14,7 @@ class SellerType extends AbstractType
     {
         $builder
             ->add('brand', BrandType::class)
+            ->add('sex', SexType::class)
             ->add('shape', ShapeType::class)
             ->add('leftcorrection', IntegerType::class)
             ->add('rightcorrection', IntegerType::class)
@@ -21,6 +22,10 @@ class SellerType extends AbstractType
             ->add('glassbridge', IntegerType::class)
             ->add('glassarm', IntegerType::class)
             ->add('glasstype', GlassType::class)
-            ->add('color', TextType::class);
+            ->add('color', ColorType::class)
+            ->add('firstImageFile', 'file')
+            ->add('secondImageFile', 'file')
+            ->add('thirdImageFile', 'file')
+            ->add('price', IntegerType::class);
     }
 }

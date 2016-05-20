@@ -3,9 +3,12 @@
 namespace EntityBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Glasses
+ * @Vich\Uploadable
  */
 class Glasses
 {
@@ -331,5 +334,282 @@ class Glasses
     public function getUser()
     {
         return $this->user;
+    }
+    /**
+     * @var string
+     */
+    private $sex;
+
+
+    /**
+     * Set sex
+     *
+     * @param string $sex
+     * @return Glasses
+     */
+    public function setSex($sex)
+    {
+        $this->sex = $sex;
+
+        return $this;
+    }
+
+    /**
+     * Get sex
+     *
+     * @return string 
+     */
+    public function getSex()
+    {
+        return $this->sex;
+    }
+    /**
+     * @var integer
+     */
+    private $price;
+
+
+    /**
+     * Set price
+     *
+     * @param integer $price
+     * @return Glasses
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get price
+     *
+     * @return integer 
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @ORM\Column(type="datetime")
+     *
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="glasses_image", fileNameProperty="firstImageName")
+     *
+     * @var File
+     */
+    private $firstImageFile;
+
+    /**
+     * @var string
+     */
+    private $firstImageName;
+
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="glasses_image", fileNameProperty="secondImageName")
+     *
+     * @var File
+     */
+    private $secondImageFile;
+
+    /**
+     * @var string
+     */
+    private $secondImageName;
+
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="glasses_image", fileNameProperty="thirdImageName")
+     *
+     * @var File
+     */
+    private $thirdImageFile;
+
+    /**
+     * @var string
+     */
+    private $thirdImageName;
+
+
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the  update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
+     * @return Glasses
+     */
+    public function setFirstImageFile(File $image = null)
+    {
+        $this->firstImageFile = $image;
+
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTime('now');
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get firstImageFile
+     *
+     * @return string 
+     */
+    public function getFirstImageFile()
+    {
+        return $this->firstImageFile;
+    }
+
+    /**
+     * Set firstImageName
+     *
+     * @param string $firstImageName
+     * @return Glasses
+     */
+    public function setFirstImageName($firstImageName)
+    {
+        $this->firstImageName = $firstImageName;
+
+        return $this;
+    }
+
+    /**
+     * Get firstImageName
+     *
+     * @return string 
+     */
+    public function getFirstImageName()
+    {
+        return $this->firstImageName;
+    }
+
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the  update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
+     * @return Glasses
+     */
+    public function setSecondImageFile(File $image = null)
+    {
+        $this->secondImageFile = $image;
+
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTime('now');
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get secondImageFile
+     *
+     * @return string 
+     */
+    public function getSecondImageFile()
+    {
+        return $this->secondImageFile;
+    }
+
+    /**
+     * Set secondImageName
+     *
+     * @param string $secondImageName
+     * @return Glasses
+     */
+    public function setSecondImageName($secondImageName)
+    {
+        $this->secondImageName = $secondImageName;
+
+        return $this;
+    }
+
+    /**
+     * Get secondImageName
+     *
+     * @return string 
+     */
+    public function getSecondImageName()
+    {
+        return $this->secondImageName;
+    }
+
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the  update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
+     * @return Glasses
+     */
+    public function setThirdImageFile(File $image = null)
+    {
+        $this->thirdImageFile = $image;
+
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTime('now');
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get thirdImageFile
+     *
+     * @return string 
+     */
+    public function getThirdImageFile()
+    {
+        return $this->thirdImageFile;
+    }
+
+    /**
+     * Set thirdImageName
+     *
+     * @param string $thirdImageName
+     * @return Glasses
+     */
+    public function setThirdImageName($thirdImageName)
+    {
+        $this->thirdImageName = $thirdImageName;
+
+        return $this;
+    }
+
+    /**
+     * Get thirdImageName
+     *
+     * @return string 
+     */
+    public function getThirdImageName()
+    {
+        return $this->thirdImageName;
     }
 }

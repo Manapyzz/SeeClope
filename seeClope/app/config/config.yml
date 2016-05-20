@@ -75,3 +75,7 @@ vich_uploader:
         product_image:
             uri_prefix:         /images/profile
             upload_destination: %kernel.root_dir%/../web/assets/images/profile
+
+        glasses_image:
+            uri_prefix:         /images/glasses
+            upload_destination: %kernel.root_dir%/../web/assets/images/glasses
