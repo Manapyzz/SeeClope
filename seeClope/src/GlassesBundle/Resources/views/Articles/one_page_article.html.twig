@@ -1,0 +1,17 @@
+<h2>{{ article.brand }}</h2><br>
+Pour: {{ article.sex }} <br>
+Forme: {{ article.shape }}<br>
+Correction Oeil Gauche: {{ article.leftcorrection }}<br>
+Correction Oeil Droit: {{ article.rightcorrection }}<br>
+Type de Verre: {{ article.glasstype }}<br>
+Couleur: {{ article.color}}<br><br>
+<h4>Les Dimensions:</h4>
+Diamètre du Verre: {{ article.glassdiameter }}<br>
+Pont des lunettes: {{ article.glassbridge }}<br>
+Tailles des branches: {{ article.glassarm }}<br>
+Prix: {{ article.price }}<br><br>
+Photos:
+<img width="200px" src="/assets/images/glasses/{{ article.firstImageName }}">
+<img width="200px" src="/assets/images/glasses/{{ article.secondImageName }}">
+<img width="200px" src="/assets/images/glasses/{{ article.thirdImageName }}">
+Offre par : <a href="profile/show/{{ article.user.username }}">{{ article.user.username|upper }}</a>

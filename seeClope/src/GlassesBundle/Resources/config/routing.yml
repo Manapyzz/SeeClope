@@ -9,3 +9,7 @@ glasses_show_article:
 glasses_search:
     path: /search
     defaults: { _controller: GlassesBundle:Search:search }
+
+one_page_glasses:
+    path: /articles/{glassesId}
+    defaults: { _controller: GlassesBundle:Articles:onepage}

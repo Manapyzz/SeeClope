@@ -46,4 +46,17 @@ class ArticlesController extends Controller
             )
         );
     }
+
+    public function onePageAction($glassesId)
+    {
+        $article = $this->getDoctrine()->getManager()
+            ->getRepository('EntityBundle:Glasses')
+            ->findOneById($glassesId);
+
+        return $this->render(
+            'GlassesBundle:Articles:one_page_article.html.twig', array(
+                'article' => $article
+            )
+        );
+    }
 }
