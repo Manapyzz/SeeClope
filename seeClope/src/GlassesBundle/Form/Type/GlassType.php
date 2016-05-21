@@ -15,7 +15,7 @@ class GlassType extends AbstractType
                 'unifocaux' => 'unifocaux',
                 'progressifs' => 'progressifs',
                 'mi-distance' => 'mi-distance',
-            )
+            ),
         ));
     }
 

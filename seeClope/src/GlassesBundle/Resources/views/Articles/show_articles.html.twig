@@ -2,12 +2,14 @@
 {{ form_end(searchForm) }}
 
 {% for item in articles %}
-    <a href="articles/{{ item.id }}"><h2>{{ item.brand }}</h2></a><br>
+    <h2>{{ item.brand }}</h2><br>
     Pour: {{ item.sex }} <br>
     Forme: {{ item.shape }}<br>
     Correction Oeil Gauche: {{ item.leftcorrection }}<br>
     Correction Oeil Droit: {{ item.rightcorrection }}<br>
     Prix: {{ item.price }}<br><br>
     <img width="200px" src="/assets/images/glasses/{{ item.firstImageName }}">
-    Offre par : <a href="profile/show/{{ item.user.username }}">{{ item.user.username|upper }}</a>
+    Offre par : <a href="profile/show/{{ item.user.username }}">{{ item.user.username|upper }}</a><br>
+
+    <a href="articles/{{ item.id }}">Voir Offre en détail</a>
 {% endfor %}

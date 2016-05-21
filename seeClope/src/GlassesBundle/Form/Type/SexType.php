@@ -14,7 +14,8 @@ class SexType extends AbstractType
             'choices' => array(
                 'homme' => 'Homme',
                 'femme' => 'Femme',
-            )
+            ),
+            'empty_value' => false
         ));
     }
 

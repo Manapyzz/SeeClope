@@ -20,8 +20,8 @@ class BrandSearchType extends AbstractType
                 'Gucci' => 'Gucci',
                 'Paul & Joe' => 'Paul & Joe',
                 'Paul Smith' => 'Paul Smith',
-                'IKKS' => 'Oakley',
-            )
+                'Oakley' => 'Oakley',
+            ),
         ));
     }
 

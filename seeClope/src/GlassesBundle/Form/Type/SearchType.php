@@ -20,7 +20,22 @@ class SearchType extends AbstractType
             ->add('rightcorrection', IntegerType::class, array(
                 'required' => false
             ))
-            ->add('glasstype', IntegerType::class, array(
+            ->add('glasstype', GlassSearchType::class, array(
+                'required' => false
+            ))
+            ->add('sex', SexType::class, array(
+                'required' => false
+            ))
+            ->add('color', ColorSearchType::class, array(
+                'required' => false
+            ))
+            ->add('minPrice', IntegerType::class, array(
+                'required' => false
+            ))
+            ->add('maxPrice', IntegerType::class, array(
+                'required' => false
+            ))
+            ->add('shape', ShapeSearchType::class, array(
                 'required' => false
             ))
             ->add('search', SubmitType::class );
