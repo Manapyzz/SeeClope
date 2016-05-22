@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Admin DashBoard</h1>
+
+<h2>Offre:</h2>
+
+<a href="/admin/offers/add">Add New Offer</a>
+
+<table width="100%">
+    <tr>
+        <th> Brand </th>
+        <th> Pour </th>
+        <th> Color </th>
+        <th> Price </th>
+        <th> Offre Par </th>
+        <th> Offre </th>
+    </tr>
+    {% for item in offers %}
+        <tr>
+            <td>{{ item.brand }}</td>
+            <td>{{ item.sex }}</td>
+            <td>{{ item.color }}</td>
+            <td>{{ item.price }}</td>
+            <td><a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a></td>
+            <td><a href="/articles/{{ item.id }}">Show</a> or <a href="/admin/offers/edit/{{ item.id }}">Edit</a> or <a href="/admin/offers/delete/{{ item.id }}">Delete</a></td>
+        </tr>
+    {% endfor %}
+</table> <br>
+
+<a href="/admin">Return To dashboard</a>
+
+</body>
+</html>
+
+
+

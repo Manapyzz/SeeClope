@@ -1,5 +1,3 @@
-{% extends 'UserBundle:Base:homepage.html.twig' %}
-{% block container %}
 {{ form_start(form) }}
     {{ form_row(form.brand) }}
     {{ form_row(form.sex) }}
@@ -15,6 +13,7 @@
     {{ form_row(form.firstImageFile) }}
     {{ form_row(form.secondImageFile) }}
     {{ form_row(form.thirdImageFile) }}
-<button type="submit">Put Your Item on Sale</button>
-{{ form_end(form) }}
-{% endblock %}
+<button type="submit">Put Item on Sale</button>
+{{ form_end(form) }} <br>
+
+<a href="/admin/offers">Back To Offers</a>

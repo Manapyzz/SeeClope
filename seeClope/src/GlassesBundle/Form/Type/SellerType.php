@@ -23,9 +23,15 @@ class SellerType extends AbstractType
             ->add('glassarm', IntegerType::class)
             ->add('glasstype', GlassType::class)
             ->add('color', ColorType::class)
-            ->add('firstImageFile', 'file')
-            ->add('secondImageFile', 'file')
-            ->add('thirdImageFile', 'file')
+            ->add('firstImageFile', 'file',array(
+                'data_class' => null
+            ))
+            ->add('secondImageFile', 'file',array(
+                'data_class' => null
+            ))
+            ->add('thirdImageFile', 'file',array(
+                'data_class' => null
+            ))
             ->add('price', IntegerType::class);
     }
 }

@@ -313,4 +313,22 @@ class User implements UserInterface, \Serializable
     {
         return $this->imageName;
     }
+    /**
+     * @var array
+     */
+    private $roles;
+
+
+    /**
+     * Set roles
+     *
+     * @param array $roles
+     * @return User
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+
+        return $this;
+    }
 }

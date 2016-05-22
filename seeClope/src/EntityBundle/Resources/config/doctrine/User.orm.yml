@@ -39,3 +39,5 @@ EntityBundle\Entity\User:
         imageName :
             type : string
             length : 255
+        roles:
+            type: array

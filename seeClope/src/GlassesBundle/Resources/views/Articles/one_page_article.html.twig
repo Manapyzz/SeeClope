@@ -14,4 +14,7 @@ Photos:
 <img width="200px" src="/assets/images/glasses/{{ article.firstImageName }}">
 <img width="200px" src="/assets/images/glasses/{{ article.secondImageName }}">
 <img width="200px" src="/assets/images/glasses/{{ article.thirdImageName }}">
-Offre par : <a href="profile/show/{{ article.user.username }}">{{ article.user.username|upper }}</a>
+Offre par : <a href="/profile/show/{{ article.user.username|lower }}">{{ article.user.username|upper }}</a>
+
+
+<a href="/shopping_cart/add/{{ article.id }}">Ajouter au Panier</a>

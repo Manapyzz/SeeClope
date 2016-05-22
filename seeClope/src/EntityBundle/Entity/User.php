@@ -233,11 +233,6 @@ class User implements UserInterface, \Serializable
             ) = unserialize($serialized);
     }
 
-    public function getRoles()
-    {
-        return array('ROLE_USER');
-    }
-
     /**
      * NOTE: This is not a mapped field of entity metadata, just a simple property.
      *
@@ -312,5 +307,27 @@ class User implements UserInterface, \Serializable
     public function getImageName()
     {
         return $this->imageName;
+    }
+    /**
+     * @var array
+     */
+    private $roles;
+
+    public function getRoles()
+    {
+        return array($this->roles);
+    }
+
+    /**
+     * Set roles
+     *
+     * @param array $roles
+     * @return User
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+
+        return $this;
     }
 }
