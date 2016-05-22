@@ -72,7 +72,8 @@
 
 /*---MAIN---*/
 .container {
-  position: relative; }
+  position: relative;
+  background-color: #f5f5f5; }
 
 /*---FIRST SECTION---*/
 .first {
@@ -83,7 +84,7 @@
 
 .title {
   position: absolute;
-  margin-top: 16px;
+  margin-top: 5%;
   z-index: 1;
   left: 50%;
   transform: translate(-50%);
@@ -113,44 +114,51 @@
   font-family: MontserratRegular;
   font-size: 1.1rem;
   color: #5b5b5b;
-  text-align: center; }
+  margin: 5% 0;
+  display: inline-block; }
+
+.titleLineLeft {
+  width: 20%;
+  margin-bottom: 2%;
+  display: inline-block;
+  margin-left: 4%;
+  margin-right: 5%; }
+
+.titleLineRight {
+  width: 20%;
+  margin-bottom: 2%;
+  display: inline-block;
+  margin-left: 5%; }
 
 .select {
   display: inline-block;
-  width: 150px;
-  height: 150px; }
+  width: 44%;
+  margin-left: 4%;
+  background-color: #fff;
+  text-align: center; }
 
 .selectImg {
-  width: 50%; }
-
-.selectProfilImg {
   display: inline-block;
-  height: 55px;
-  width: 55px;
-  border: 1px solid transparent;
-  border-radius: 38px;
-  margin-left: 5%; }
-
-.selectPseudo {
-  display: inline-block;
-  font-family: MontserratLight;
-  font-size: 0.9rem;
-  color: #5b5b5b; }
-
-.selectPrice {
-  display: inline-block;
-  background-color: #06c790;
-  font-family: MontserratLight;
-  text-align: center;
-  height: 30px;
-  line-height: 30px;
-  width: 55px; }
+  width: 80%; }
 
 .selectBrand {
-  display: inline-block;
+  display: block;
   font-family: MontserratLight;
   font-size: 0.9rem;
-  color: #5d5d5d; }
+  color: #5d5d5d;
+  margin-bottom: 5%; }
+
+.lineSection {
+  margin-bottom: 5%;
+  color: #e7e7e7;
+  margin-left: 13%;
+  width: 73%; }
+
+.selectPrice {
+  display: block;
+  color: #5b5b5b;
+  font-family: MontserratRegular;
+  margin-bottom: 5%; }
 
 /*---THIRD SECTION---*/
 /*---FOR SECTION---*/
@@ -244,70 +252,68 @@
   margin-top: 10%; }
 
 /*---SEARCH PAGE---*/
-.titleSearch {
-  position: absolute;
-  z-index: 1;
-  top: 47%;
-  left: 28%;
-  font-family: MontserratRegular;
-  font-size: 1.6rem;
-  color: #fff; }
+.fieldBrand {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.blockSearch {
-  background: #fff;
-  margin: 10% 0 10% 25%;
-  font-family: MontserratRegular; }
+.fiedlLeftCorrection {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.choice {
-  font-family: MontserratRegular;
-  font-size: 0.8rem;
-  margin-right: 15%;
-  margin-left: 10%;
-  padding: 5% 0;
-  border-bottom: 1px solid #e2e1e1;
-  color: #676767;
-  display: inline-block; }
+.fieldRightCorrection {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.fa-chevron-up {
-  color: #8e8e8e;
-  margin-left: 23%; }
+.fieldGlassType {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.fa-chevron-down {
-  color: #45d5ac;
-  margin-left: 23%; }
+.fieldSex {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.blockOptical {
-  display: inline-block;
-  background-color: #5b5b5b;
-  height: 90px;
-  width: 90px; }
+.fieldColor {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.blockSun {
-  display: inline-block;
-  background-color: #5b5b5b;
-  height: 90px;
-  width: 90px; }
+.fieldMinPrice {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.blockOpticalSun {
-  display: inline-block;
-  background-color: #5b5b5b;
-  height: 90px;
-  width: 90px; }
+.fieldMaxPrice {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
-.blockFantasy {
-  display: inline-block;
-  background-color: #5b5b5b;
-  height: 90px;
-  width: 90px; }
-
-.submitSearch {
-  margin: 10% 10% 10% 26%;
-  width: 50%;
-  padding: 6% 1% 6% 1%;
-  border: none;
-  background-color: #06c790;
-  color: #fff;
-  font-family: MontserratRegular; }
+.fieldShape {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #d0d0d0;
+  margin: 20px 20px 20px 65px; }
 
 /*---LOGIN---*/
 .titleLogin {
@@ -352,5 +358,277 @@
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
   margin: 40px 5px 60px 65px; }
+
+/*---PROFILE---*/
+.picProfil {
+  height: 80px;
+  width: 80px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-left: 36%;
+  margin-bottom: 10%; }
+
+.userInfos {
+  font-family: MontserratHairline;
+  text-align: left;
+  margin-left: 30%;
+  margin-bottom: 4%; }
+
+.textProfile {
+  font-size: 0.8rem; }
+
+.linkEditProfile {
+  background-color: #06c790;
+  width: 49%;
+  font-family: MontserratRegular;
+  color: #fff;
+  padding: 3% 10% 3% 10%;
+  margin-left: 15%;
+  margin-bottom: 10%; }
+
+.titleSell {
+  text-align: center;
+  font-family: MontserratRegular;
+  margin-top: 5%;
+  color: #06c790;
+  margin-bottom: 5%; }
+
+.titleArticle {
+  text-align: center;
+  font-family: MontserratRegular;
+  margin-top: 5%;
+  color: #06c790;
+  margin-bottom: 5%;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 5%; }
+
+.sellUser {
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  padding-bottom: 5%;
+  margin-bottom: 5%; }
+
+.sellBlock {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  height: 100px; }
+
+.picSell {
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+  border-right: 1px solid #ededed;
+  line-height: 127px;
+  padding: 0 1%; }
+
+.blockInceptions {
+  display: inline-block;
+  width: 40%;
+  margin-left: 15%; }
+
+.sellBrand {
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  display: inline-block;
+  margin-bottom: 10%; }
+
+.viewSell {
+  display: inline-block;
+  width: 20%;
+  font-family: MontserratRegular;
+  padding: 5% 25% 5% 25%;
+  color: #06c790;
+  border: 1px solid #acecda;
+  font-size: 0.8rem;
+  margin-left: 7%; }
+
+.lastArticle {
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  padding-bottom: 5%;
+  margin-bottom: 10%; }
+
+.lastPic {
+  display: inline-block;
+  height: 112px;
+  width: 30%;
+  border: 1px solid #ededed;
+  line-height: 136px;
+  margin-left: 10%;
+  margin-bottom: 15%;
+  padding: 0 2%; }
+
+/*---EDIT PROFILE---*/
+.fieldUsername {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 14%; }
+
+.fieldLastname {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 15%; }
+
+.fieldFirstname {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 14%; }
+
+.fieldEditEmail {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 23%; }
+
+.fieldPasswordFirst {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 15%; }
+
+.fieldPasswordSecond {
+  border: 1px solid #d0d0d0;
+  padding: 4px 1px 4px 13px;
+  font-family: MontserratHairline;
+  color: #5b5b5b; }
+
+.required {
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  display: inline-block;
+  color: #5b5b5b;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%; }
+
+.editSubmit {
+  margin: 10% 10% 10% 26%;
+  width: 50%;
+  padding: 6% 1% 6% 1%;
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular; }
+
+.submitFileImage {
+  margin: 0 10% 10% 0;
+  border: none;
+  color: #5b5b5b;
+  font-family: MontserratRegular; }
+
+.submitRegister {
+  margin: 10% 10% 10% 26%;
+  width: 50%;
+  padding: 6% 1% 6% 1%;
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular; }
+
+@media (min-width: 641px) {
+  /*---HEADER---*/
+  .blockLogo {
+    margin-left: 36%;
+    margin-top: 1%; }
+
+  .blockMarket {
+    margin-left: 20%; }
+
+  /*---MENU HAMBURGER---*/
+  #sidebar {
+    width: 220px; }
+
+  #sidebar-btn {
+    width: 20%;
+    margin: 15% 0 5% 90%; }
+
+  .textMenu {
+    font-size: 1.2rem; }
+
+  /*---FIRST SECTION---*/
+  .title {
+    font-size: 2.6rem; }
+
+  .text {
+    font-size: 1.6rem;
+    width: 100%; }
+
+  /*---SECOND SECTION---*/
+  .titleSelect {
+    font-size: 1.6rem; }
+
+  .titleLineLeft {
+    margin-bottom: 1%;
+    margin-left: 10%; }
+
+  .selectBrand {
+    font-size: 1.2rem; }
+
+  .selectPrice {
+    font-size: 1.2rem; }
+
+  /*---THIRD SECTION---*/
+  /*---FOR SECTION---*/
+  .secondText {
+    font-size: 1.2rem; }
+
+  .thirdText {
+    font-size: 1.2rem;
+    margin: 5% 5% 10% 25%; }
+
+  .imgApp {
+    width: 31%;
+    margin-left: 18%;
+    margin-bottom: 10%; }
+
+  .textGlass {
+    left: 33%;
+    font-size: 1.5rem; }
+
+  /*---FIVE SECTION---*/
+  /*---FOOTER---*/
+  .lineLeft {
+    margin: 0 0 -21% 5%; }
+
+  .mention {
+    font-size: 0.8rem; }
+
+  .textLink {
+    font-size: 1rem; } }
+@media (min-width: 1045px) {
+  /*---HEADER---*/
+  .menu {
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
+
+  /*---MENU HAMBURGER---*/
+  #sidebar {
+    position: inherit;
+    display: inline-block; }
+
+  .main-menu {
+    display: inline-block; }
+
+  /*---FIRST SECTION---*/
+  /*---SECOND SECTION---*/
+  /*---THIRD SECTION---*/
+  /*---FOR SECTION---*/
+  /*---FIVE SECTION---*/
+  /*---FOOTER---*/ }
 
 /*# sourceMappingURL=style.css.map */

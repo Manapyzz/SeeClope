@@ -1,26 +1,50 @@
-<h1>Profil de {{ profile.username }}</h1>
+{% extends 'UserBundle:Base:homepage.html.twig' %}
+{% block container %}
+    <section class="profil">
+        <div class="picProfil"><img src="/assets/images/profile/{{ profile.imageName }}"></div>
+        <div class="userInfos">
+            <h2 class="titleUser">Bonjour {{ profile.username }} !</h2>
+            <p class="textProfile">(lieux/Pays)</p>
+            <p class="textProfile">Date d'inscription</p><br>
+        </div>
+        <div class="linkEditProfile"><a href="/profile/edit">Modifier votre profil</a></div>
 
-Nom: {{ profile.lastname }} <br>
-Prénom: {{ profile.firstname }} <br>
-Email: {{ profile.email }} <br>
-<img width="200px" src="/assets/images/profile/{{ profile.imageName }}"><br><br>
-
-{% if profile.id != app.user.id %}
-    {{ form_start(commentForm) }}
-    {{ form_end(commentForm) }}
-{% endif %}
-
-<h4>Commentaires:</h4>
+        {% if profile.id != app.user.id %}
+            {{ form_start(commentForm) }}
+            {{ form_end(commentForm) }}
+        {% endif %}
 
 
-{% if userComment|length > 0 %}
-        {% for item in userComment %}
-            Rating: {{ item.rating }}<br>
-            Review: {{ item.review }}<br>
-            Posted By <a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a><br><br>
-        {% endfor %}
-{% elseif userComment|length == 0 %}
-    This User has no review
-{% endif %}
 
+
+        {% if userComment|length > 0 %}
+            {% for item in userComment %}
+                Rating: {{ item.rating }}<br>
+                Review: {{ item.review }}<br>
+                Posted By <a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a><br><br>
+            {% endfor %}
+        {% elseif userComment|length == 0 %}
+
+        {% endif %}
+    </section>
+    <section class="sellUser">
+        <h2 class="titleSell">VOS VENTES</h2>
+        <div class="sellBlock">
+            <div class="picSell"><img src="{{ asset('assets/img/sell_pic.jpg') }}"></div>
+            <div class="blockInceptions">
+                <div class="sellBrand">Rayban aviateur</div><br>
+                <div class="viewSell"><a href="#">Voir</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="lastArticle">
+        <h2 class="titleArticle">DERNIERS ARTICLES CONSULTE</h2>
+        <div class="blockLastArticle">
+            <div class="lastPic"><img src="{{ asset('assets/img/last_glass_01.jpg') }}"></div>
+            <div class="lastPic"><img src="{{ asset('assets/img/last_glass_02.jpg') }}"></div>
+            <div class="lastPic"><img src="{{ asset('assets/img/last_glass_03.jpg') }}"></div>
+            <div class="lastPic"><img src="{{ asset('assets/img/last_glass_04.jpg') }}"></div>
+        </div>
+    </section>
+{% endblock %}
 

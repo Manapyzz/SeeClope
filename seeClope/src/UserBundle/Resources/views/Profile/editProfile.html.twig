@@ -1,8 +1,24 @@
+{% extends 'UserBundle:Base:homepage.html.twig' %}
+
+{%  block container %}
 {{ form_start(form) }}
-    {{ form_row(form.lastname) }}
-    {{ form_row(form.firstname) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.plainPassword.first) }}
-    {{ form_row(form.plainPassword.second) }}
-<button type="submit">Edit Profile</button>
-{{ form_end(form) }}
+    {{ form_label(form.imageFile) }}
+    {{ form_errors(form.imageFile) }}
+    {{ form_widget(form.imageFile, { 'attr': {'class': 'submitFileImage'} }) }}
+    {{ form_label(form.lastname) }}
+    {{ form_errors(form.lastname) }}
+    {{ form_widget(form.lastname, { 'attr': {'class': 'fieldLastname'} }) }}
+    {{ form_label(form.firstname) }}
+    {{ form_errors(form.firstname) }}
+    {{ form_widget(form.firstname, { 'attr': {'class': 'fieldFirstname'} }) }}
+    {{ form_label(form.email) }}
+    {{ form_errors(form.email) }}
+    {{ form_widget(form.email, { 'attr': {'class': 'fieldEditEmail'} }) }}
+    {{ form_label(form.plainPassword.first) }}
+    {{ form_errors(form.plainPassword.first) }}
+    {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'fieldPasswordFirst'} }) }}
+    {{ form_label(form.plainPassword.second) }}
+    {{ form_errors(form.plainPassword.second) }}
+    {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'fieldPasswordSecond'} }) }}
+<input class="editSubmit" type="submit" value="Valider">
+{% endblock %}

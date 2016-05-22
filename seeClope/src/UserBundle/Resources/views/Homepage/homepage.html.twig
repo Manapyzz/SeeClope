@@ -5,7 +5,9 @@
 <section class="first second third">
     <div class="blockArticle">
         <h1 class="title">SeeClop</h1>
-        <img src="{{ asset('assets/img/img-first-article.jpg') }}">
+        <div class="homeImg">
+            <img src="{{ asset('assets/img/img-first-article.jpg') }}">
+        </div>
         <p class="text">Chez nous acheté plus qu'une<br>
             demi lunette
         </p>
@@ -13,26 +15,37 @@
 </section>
 <section>
     <div class="selectProduct">
-        <hr><h2 class="titleSelect">Nôtre séléction</h2><hr>
+        <hr class="titleLineLeft"><h2 class="titleSelect">Nôtre séléction</h2><hr class="titleLineRight">
         <div class="select left">
             <div class="selectImg"><a href="#"><img src="{{ asset('assets/img/chanel7.jpg') }}"></a></div>
-            <div class="selectProfilImg"><a href="/profile/show/{username}"><img src="{{ asset('assets/img/pic_profil.jpg') }}"></a></div>
-            <div class="selectPseudo">FREDO</div>
-            <div class="selectPrice">135 €</div>
             <div class="selectBrand">Pierre Gardin</div>
+            <hr class="lineSection">
+            <div class="selectPrice">135 €</div>
         </div>
         <div class="select right">
             <div class="selectImg"><a href="#"><img src="{{ asset('assets/img/chanel7.jpg') }}"></a></div>
-            <div class="selectProfilImg"><a href="/profile/show/{username}"><img src="{{ asset('assets/img/pic_profil.jpg') }}"></a></div>
-            <div class="selectPseudo">FREDO</div>
-            <div class="selectPrice">135 €</div>
             <div class="selectBrand">Pierre Gardin</div>
+            <hr class="lineSection">
+            <div class="selectPrice">135 €</div>
         </div>
     </div>
 </section>
 <section>
     <div class="newProduct">
+        <hr class="titleLineLeft"><h2 class="titleSelect">Les nouveautés</h2><hr class="titleLineRight">
+        <div class="select left">
+            <div class="selectImg"><a href="#"><img src="{{ asset('assets/img/chanel7.jpg') }}"></a></div>
+            <div class="selectBrand">Pierre Gardin</div>
+            <hr class="lineSection">
+            <div class="selectPrice">135 €</div>
+        </div>
+        <div class="select right">
+            <div class="selectImg"><a href="#"><img src="{{ asset('assets/img/chanel7.jpg') }}"></a></div>
+            <div class="selectBrand">Pierre Gardin</div>
+            <hr class="lineSection">
+            <div class="selectPrice">135 €</div>
 
+        </div>
     </div>
 </section>
 <section class="first second third">

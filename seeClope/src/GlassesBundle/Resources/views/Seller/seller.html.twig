@@ -1,3 +1,5 @@
+{% extends 'UserBundle:Base:homepage.html.twig' %}
+{% block container %}
 {{ form_start(form) }}
     {{ form_row(form.brand) }}
     {{ form_row(form.sex) }}
@@ -12,3 +14,4 @@
     {{ form_row(form.price) }}
 <button type="submit">Put Your Item on Sale</button>
 {{ form_end(form) }}
+{% endblock %}
