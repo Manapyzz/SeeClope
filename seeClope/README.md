@@ -1,4 +1,6 @@
 seeClope
 ========
 
-A Symfony project created on May 12, 2016, 10:16 am.
+To have this project working, just put your database informations into parameters.yml.
+
+Created By Gael MARGUILLER & Alexandre PICARD
