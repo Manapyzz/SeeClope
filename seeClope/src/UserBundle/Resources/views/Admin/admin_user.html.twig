@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Admin DashBoard</h1>
+
+<h2>USERS</h2>
+
+<a href="/admin/users/add">Add User</a><br><br>
+
+<table width="100%">
+    <tr>
+        <th> Username </th>
+        <th> Email </th>
+        <th> Firstname </th>
+        <th> Lastname </th>
+        <th> Profile </th>
+        <th> Delete </th>
+    </tr>
+    {% for item in users %}
+        <tr>
+            <td>{{ item.username }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.firstname }}</td>
+            <td>{{ item.lastname }}</td>
+            <td>
+                <a href="/profile/show/{{ item.username }}">Show</a> or <a href="/admin/users/edit/{{ item.id }}">Edit</a>
+            </td>
+            <td>
+                <a href="/admin/users/delete/{{ item.id }}">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table> <br>
+
+<a href="/admin">Back To Dashboard</a>
+
+</body>
+</html>
+
+
+

@@ -6,10 +6,14 @@ glasses_show_article:
     path: /articles
     defaults: { _controller: GlassesBundle:Articles:show }
 
-glasses_search:
-    path: /search
-    defaults: { _controller: GlassesBundle:Search:search }
-
 one_page_glasses:
     path: /articles/{glassesId}
     defaults: { _controller: GlassesBundle:Articles:onepage}
+
+shopping_cart_show:
+    path: /shopping_cart/show
+    defaults: { _controller: GlassesBundle:ShoppingCart:show}
+
+shopping_cart_add:
+    path: /shopping_cart/add/{id}
+    defaults: { _controller: GlassesBundle:ShoppingCart:addItem}

@@ -1,6 +1,3 @@
 services:
-    get_brand_search:
-        class: GlassesBundle\Controller\SearchController
-
     upload_comment:
         class: UserBundle\Controller\ProfileCommentController

@@ -18,6 +18,7 @@ class RegistrationController extends Controller
         $user = new User();
         $user->setImageName('DefaultImage.png');
         $user->setImageFile();
+        $user->setRoles('ROLE_USER');
         $form = $this->createForm(UserType::class, $user);
 
         // 2) handle the submit (will only happen on POST)

@@ -20,3 +20,39 @@ show_profile:
 edit_profile:
     path: /profile/edit
     defaults: { _controller: UserBundle:Profile:edit}
+
+admin_dashboard:
+    path: /admin
+    defaults: { _controller: UserBundle:Admin:main}
+
+admin_dashboard_user:
+    path: /admin/users
+    defaults: { _controller: UserBundle:Admin:users}
+
+admin_dashboard_user_add:
+    path: /admin/users/add
+    defaults: { _controller: UserBundle:Admin:addUser}
+
+admin_dashboard_user_edit:
+    path: /admin/users/edit/{id}
+    defaults: { _controller: UserBundle:Admin:editUser}
+
+admin_dashboard_user_delete:
+    path: /admin/users/delete/{id}
+    defaults: { _controller: UserBundle:Admin:deleteUser}
+
+admin_dashboard_offer:
+    path: /admin/offers
+    defaults: { _controller: UserBundle:Admin:offers}
+
+admin_dashboard_offer_add:
+    path: /admin/offers/add
+    defaults: { _controller: UserBundle:Admin:addArticle}
+
+admin_dashboard_offer_edit:
+    path: /admin/offers/edit/{id}
+    defaults: { _controller: UserBundle:Admin:editArticle}
+
+admin_dashboard_offer_delete:
+    path: /admin/offers/delete/{id}
+    defaults: { _controller: UserBundle:Admin:deleteArticle}
