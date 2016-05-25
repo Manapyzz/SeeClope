@@ -56,3 +56,11 @@ admin_dashboard_offer_edit:
 admin_dashboard_offer_delete:
     path: /admin/offers/delete/{id}
     defaults: { _controller: UserBundle:Admin:deleteArticle}
+
+admin_dashboard_review:
+    path: /admin/reviews
+    defaults: { _controller: UserBundle:Admin:review}
+
+admin_dashboard_review_delete:
+    path: /admin/reviews/delete/{id}
+    defaults: { _controller: UserBundle:Admin:deleteReview}

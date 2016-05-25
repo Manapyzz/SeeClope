@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Admin DashBoard</h1>
+
+<h2>Offre:</h2>
+
+<a href="/admin/offers/add">Add New Offer</a>
+
+<table width="100%">
+    <tr>
+        <th> Rating </th>
+        <th> Review </th>
+        <th> Review Author </th>
+        <th> User Id of Profile </th>
+        <th> Delete Comment </th>
+    </tr>
+    {% for value in reviews %}
+        <tr>
+            {% if value.id is defined %}
+                <td>{{ value.rating }}/5</td>
+                <td>{{ value.review }}</td>
+                <td>{{ value.user.username }}</td>
+                <td>{{ value.profileId }}</td>
+                <td><a href="/admin/reviews/delete/{{ value.id }}">Delete</a></td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+
+</table> <br>
+
+<a href="/admin">Return To dashboard</a>
+
+
+
+
+</body>
+</html>
+
+

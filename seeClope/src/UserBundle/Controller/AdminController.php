@@ -190,4 +190,41 @@ class AdminController extends Controller
 
         return new Response('Article Well Deleted');
     }
+    
+    public function reviewAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $reviews = $em->getRepository('EntityBundle:ProfileComment')
+            ->findAll();
+
+        $userProfile = array();
+
+        for($i = 0; $i < count($reviews); $i++)
+        {
+            $em = $this->getDoctrine()->getManager();
+            $query = $em->getRepository('EntityBundle:User')
+                ->findById($reviews[$i]->getProfileId());
+            $userProfile[] = $query;
+        }
+
+        $reviews['profileUser'] = $userProfile;
+
+        return $this->render(
+            'UserBundle:Admin:admin_reviews.html.twig', array(
+                'reviews' => $reviews
+            )
+        );
+    }
+
+    public function deleteReviewAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $comment = $em->getRepository('EntityBundle:ProfileComment')
+            ->find($id);
+
+        $em->remove($comment);
+        $em->flush();
+
+        return new Response('Review Well Deleted');
+    }
 }
