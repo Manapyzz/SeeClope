@@ -1,20 +1,26 @@
-<h2>{{ article.brand }}</h2><br>
-Pour: {{ article.sex }} <br>
-Forme: {{ article.shape }}<br>
-Correction Oeil Gauche: {{ article.leftcorrection }}<br>
-Correction Oeil Droit: {{ article.rightcorrection }}<br>
-Type de Verre: {{ article.glasstype }}<br>
-Couleur: {{ article.color}}<br><br>
-<h4>Les Dimensions:</h4>
-Diamètre du Verre: {{ article.glassdiameter }}<br>
-Pont des lunettes: {{ article.glassbridge }}<br>
-Tailles des branches: {{ article.glassarm }}<br>
-Prix: {{ article.price }}<br><br>
-Photos:
-<img width="200px" src="/assets/images/glasses/{{ article.firstImageName }}">
-<img width="200px" src="/assets/images/glasses/{{ article.secondImageName }}">
-<img width="200px" src="/assets/images/glasses/{{ article.thirdImageName }}">
-Offre par : <a href="/profile/show/{{ article.user.username|lower }}">{{ article.user.username|upper }}</a>
+{% extends 'UserBundle:Base:homepage.html.twig' %}
+{% block container %}
+    <section class="sectionViewArticle">
+        <h2 class="titleArticleBrand">{{ article.brand }}</h2>
+        <div class="articleSex">Pour : {{ article.sex }}</div>
+        <div class="articleShape">Forme : {{ article.shape }}</div>
+        <div class="articleLeftCorrection">Correction Oeil Gauche : {{ article.leftcorrection }}</div>
+        <div class="articleRightCorrection">Correction Oeil Droit : {{ article.rightcorrection }}</div>
+        <div class="articleGlassType">Type de Verre : {{ article.glasstype }}</div>
+        <div class="articleColor">Couleur : {{ article.color }}</div>
+        <h2 class="titleDimentions">Les Dimensions :</h2>
+        <div class="articleGlassDiameter">Diamètre du Verre : {{ article.glassdiameter }}</div>
+        <div class="articleGlassBridge">Pont des lunettes : {{ article.glassbridge }}</div>
+        <div class="articleGlassArm">Tailles des branches : {{ article.glassarm }}</div>
+        <div class="articlePrice">Prix : {{ article.price }}</div>
+        <div class="articleUser">Offre par : <a
+                    href="/profile/show/{{ article.user.username|lower }}">{{ article.user.username|upper }}</a></div>
+        <span class="pic">Photos:</span>
+        <div class="articleImg"><img width="200px" src="/assets/images/glasses/{{ article.firstImageName }}"></div>
+        <div class="articleImg"><img width="200px" src="/assets/images/glasses/{{ article.secondImageName }}"></div>
+        <div class="articleImg"><img width="200px" src="/assets/images/glasses/{{ article.thirdImageName }}"></div>
 
 
-<a href="/shopping_cart/add/{{ article.id }}">Ajouter au Panier</a>
+        <div class="basket"><a href="/shopping_cart/add/{{ article.id }}">Ajouter au Panier</a></div>
+    </section>
+{% endblock %}

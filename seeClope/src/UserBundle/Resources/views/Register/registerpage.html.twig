@@ -1,24 +1,38 @@
 {% extends 'UserBundle:Base:homepage.html.twig' %}
 {% block container %}
-{{ form_start(form) }}
-    {{ form_label(form.username) }}
-    {{ form_errors(form.username) }}
-    {{ form_widget(form.username, { 'attr': {'class': 'fieldUsername'} }) }}
-    {{ form_label(form.lastname) }}
-    {{ form_errors(form.lastname) }}
-    {{ form_widget(form.lastname, { 'attr': {'class': 'fieldLastname'} }) }}
-    {{ form_label(form.firstname) }}
-    {{ form_errors(form.firstname) }}
-    {{ form_widget(form.firstname, { 'attr': {'class': 'fieldFirstname'} }) }}
-    {{ form_label(form.email) }}
-    {{ form_errors(form.email) }}
-    {{ form_widget(form.email, { 'attr': {'class': 'fieldEditEmail'} }) }}
-    {{ form_label(form.plainPassword.first) }}
-    {{ form_errors(form.plainPassword.first) }}
-    {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'fieldPasswordFirst'} }) }}
-    {{ form_label(form.plainPassword.second) }}
-    {{ form_errors(form.plainPassword.second) }}
-    {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'fieldPasswordSecond'} }) }}
-<input class="submitRegister" type="submit" value="Valider">
-{{ form_end(form) }}
+<section class="sectionRegister">
+    {{ form_start(form) }}
+    <div>
+        <span class="textRegister">{{ form_label(form.username) }}</span>
+        {{ form_errors(form.username) }}
+        {{ form_widget(form.username, { 'attr': {'class': 'fieldUsername'} }) }}
+    </div>
+    <div>
+        <span class="textRegister">{{ form_label(form.lastname) }}</span>
+        {{ form_errors(form.lastname) }}
+        {{ form_widget(form.lastname, { 'attr': {'class': 'fieldLastname'} }) }}
+    </div>
+    <div>
+        <span class="textRegister">{{ form_label(form.firstname) }}</span>
+        {{ form_errors(form.firstname) }}
+        {{ form_widget(form.firstname, { 'attr': {'class': 'fieldFirstname'} }) }}
+    </div>
+    <div>
+        <span class="textRegister">{{ form_label(form.email) }}</span>
+        {{ form_errors(form.email) }}
+        {{ form_widget(form.email, { 'attr': {'class': 'fieldEmail'} }) }}
+    </div>
+    <div>
+        <span class="textRegister">{{ form_label(form.plainPassword.first) }}</span>
+        {{ form_errors(form.plainPassword.first) }}
+        {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'fieldPasswordFirst'} }) }}
+    </div>
+    <div>
+        <span class="textRegister">{{ form_label(form.plainPassword.second) }}</span>
+        {{ form_errors(form.plainPassword.second) }}
+        {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'fieldPasswordSecond'} }) }}
+    </div>
+    <input class="submitRegister" type="submit" value="Valider">
+    {{ form_end(form) }}
+</section>
 {% endblock %}

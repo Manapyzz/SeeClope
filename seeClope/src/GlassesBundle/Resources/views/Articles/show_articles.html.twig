@@ -1,47 +1,51 @@
 {% extends 'UserBundle:Base:homepage.html.twig' %}
 {% block container %}
-<section>
-{{ form_start(searchForm) }}
-    {{ form_label(searchForm.brand) }}
-    {{ form_errors(searchForm.brand) }}
-    {{ form_widget(searchForm.brand, { 'attr': {'class': 'fieldBrand'} }) }}
-    {{ form_label(searchForm.leftcorrection) }}
-    {{ form_errors(searchForm.leftcorrection) }}
-    {{ form_widget(searchForm.leftcorrection, { 'attr': {'class': 'fiedlLeftCorrection'} }) }}
-    {{ form_label(searchForm.rightcorrection) }}
-    {{ form_errors(searchForm.rightcorrection) }}
-    {{ form_widget(searchForm.rightcorrection, { 'attr': {'class': 'fieldRightCorrection'} }) }}
-    {{ form_label(searchForm.glasstype) }}
-    {{ form_errors(searchForm.glasstype) }}
-    {{ form_widget(searchForm.glasstype, { 'attr': {'class': 'fieldGlassType'} }) }}
-    {{ form_label(searchForm.sex) }}
-    {{ form_errors(searchForm.sex) }}
-    {{ form_widget(searchForm.sex, { 'attr': {'class': 'fieldSex'} }) }}
-    {{ form_label(searchForm.color) }}
-    {{ form_errors(searchForm.color) }}
-    {{ form_widget(searchForm.color, { 'attr': {'class': 'fieldColor'} }) }}
-    {{ form_label(searchForm.minPrice) }}
-    {{ form_errors(searchForm.minPrice) }}
-    {{ form_widget(searchForm.minPrice, { 'attr': {'class': 'fieldMinPrice'} }) }}
-    {{ form_label(searchForm.maxPrice) }}
-    {{ form_errors(searchForm.maxPrice) }}
-    {{ form_widget(searchForm.maxPrice, { 'attr': {'class': 'fieldMaxPrice'} }) }}
-    {{ form_label(searchForm.shape) }}
-    {{ form_errors(searchForm.shape) }}
-    {{ form_widget(searchForm.shape, { 'attr': {'class': 'fieldShape'} }) }}
-    <input type="submit" value="Chercher">
+<section class="sectionSearch">
+        {{ form_start(searchForm) }}
+        <span class="textSearch">{{ form_label(searchForm.brand) }}</span>
+        {{ form_errors(searchForm.brand) }}
+        {{ form_widget(searchForm.brand, { 'attr': {'class': 'fieldBrand'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.leftcorrection) }}</span>
+        {{ form_errors(searchForm.leftcorrection) }}
+        {{ form_widget(searchForm.leftcorrection, { 'attr': {'class': 'fiedlLeftCorrection'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.rightcorrection) }}</span>
+        {{ form_errors(searchForm.rightcorrection) }}
+        {{ form_widget(searchForm.rightcorrection, { 'attr': {'class': 'fieldRightCorrection'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.glasstype) }}</span>
+        {{ form_errors(searchForm.glasstype) }}
+        {{ form_widget(searchForm.glasstype, { 'attr': {'class': 'fieldGlassType'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.sex) }}</span>
+        {{ form_errors(searchForm.sex) }}
+        {{ form_widget(searchForm.sex, { 'attr': {'class': 'fieldSex'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.color) }}</span>
+        {{ form_errors(searchForm.color) }}
+        {{ form_widget(searchForm.color, { 'attr': {'class': 'fieldColor'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.minPrice) }}</span>
+        {{ form_errors(searchForm.minPrice) }}
+        {{ form_widget(searchForm.minPrice, { 'attr': {'class': 'fieldMinPrice'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.maxPrice) }}</span>
+        {{ form_errors(searchForm.maxPrice) }}
+        {{ form_widget(searchForm.maxPrice, { 'attr': {'class': 'fieldMaxPrice'} }) }}
+        <span class="textSearch">{{ form_label(searchForm.shape) }}</span>
+        {{ form_errors(searchForm.shape) }}
+        {{ form_widget(searchForm.shape, { 'attr': {'class': 'fieldShape'} }) }}
+        <input type="submit" value="Chercher" class="searchSubmit">
 </section>
+<section class="sectionResult">
+        {% for item in articles %}
+            <hr class="resultatLineLeft"><h2 class="titleResult">Résulat</h2><hr class="resultatLineRight">
+            <div class="blockBrand">{{ item.brand }}</div>
+            <div class="blockSex">Pour : {{ item.sex }}</div>
+            <div class="blockShape">Forme : {{ item.shape }}</div>
+            <div class="blockLeftCorrection">Correction Oeil Gauche : {{ item.leftcorrection }}</div>
+            <div class="blockRightCorrection">Correction Oeil Droit : <span>{{ item.rightcorrection }}</div>
+            <div class="blockPrice">Prix : {{ item.price }}</div>
+            <div class="blockViewProduct"><img width="200px" src="/assets/images/glasses/{{ item.firstImageName }}">
+            </div>
+            <div class="blockVendor">Offre par : <a
+                        href="profile/show/{{ item.user.username }}">{{ item.user.username|upper }}</a></div>
 
-{% for item in articles %}
-    <h2>{{ item.brand }}</h2><br>
-    Pour: {{ item.sex }} <br>
-    Forme: {{ item.shape }}<br>
-    Correction Oeil Gauche: {{ item.leftcorrection }}<br>
-    Correction Oeil Droit: {{ item.rightcorrection }}<br>
-    Prix: {{ item.price }}<br><br>
-    <img width="200px" src="/assets/images/glasses/{{ item.firstImageName }}">
-    Offre par : <a href="profile/show/{{ item.user.username }}">{{ item.user.username|upper }}</a><br>
-
-    <a href="articles/{{ item.id }}">Voir Offre en détail</a>
-{% endfor %}
+            <div class="blockLinkArticle"><a href="articles/{{ item.id }}">Voir Offre en détail</a></div>
+        {% endfor %}
+</section>
 {% endblock %}

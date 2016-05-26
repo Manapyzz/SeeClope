@@ -21,11 +21,10 @@
 
 /*---HEADER---*/
 
-.menu {
-  height: 90px;
-  line-height: 90px;
-}
 
+.desktopMenu{
+  display: none;
+}
 
 .blockLogo{
   width: 25%;
@@ -78,7 +77,7 @@
   height: 100%;
   display: block;
   position: absolute;
-  left: -160px;
+  left: -200px;
   top: 0;
   transition: left 0.3s linear;
   font-family: MontserratRegular;
@@ -95,6 +94,8 @@
 .container{
   position: relative;
   background-color: #f5f5f5;
+  height: 100%;
+  padding-top: 10%;
 }
 
 /*---FIRST SECTION---*/
@@ -117,6 +118,10 @@
   color: #fff;
 }
 
+.desktopImg{
+  display: none;
+}
+
 .text{
   position: absolute;
   bottom: 50%;
@@ -134,6 +139,7 @@
   text-align: center;
   font-size: 0.9rem;
   margin: 5%;
+  padding-top: 5%;
 }
 
 /*---SECOND SECTION---*/
@@ -202,8 +208,8 @@
 
 /*---FOR SECTION---*/
 
-.second{
-  display: inline-block;
+.sectionGlass{
+  background-color: #fff;
 }
 
 .imgGlass{
@@ -226,13 +232,13 @@
 .sun{
   display: table-cell;
   vertical-align: middle;
-  height: 157px;
 }
 
 /*---FIVE ARTICLE---*/
 
-.third{
-  display: inline-block;
+.sectionApp{
+  background-color: #fff;
+  padding-top: 1%;
 }
 
 .thirdText{
@@ -262,15 +268,14 @@
 .footerTitle{
   font-size: 0.9rem;
   text-align: center;
-  margin: 0 5% 5% 5%;
+  margin: 0 5%;
   display: none;
 }
 
 .lineLeft{
-  display: inline-block;
+  display: none;
   width: 90%;
   border: 1px solid #fff;
-  margin: 0 0 -24% 5%;
 }
 
 .lineRight{
@@ -278,7 +283,6 @@
   width: 90%;
   border: 1px solid #fff;
   float: right;
-  margin: -8% 5% 0 0;;
 }
 
 .textLink{
@@ -304,88 +308,507 @@
 .mention{
   font-size: 0.6rem;
   text-align: center;
+  margin-top: 2%;
+}
+
+.lineFooter{
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.footerLogo{
+  display: none;
+}
+
+.imgAppFooter{
+  display: none;
+}
+/*---SEARCH PAGE---*/
+
+.sectionResult{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+}
+
+.sectionSearch{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+}
+
+.textSearch{
+  font-family: MontserratRegular;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-left: 5%;
   margin-bottom: 5%;
   margin-top: 10%;
 }
 
-
-/*---SEARCH PAGE---*/
-
-
 .fieldBrand{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  padding: 4px 1px 4px 19px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 .fiedlLeftCorrection{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 4%;
+  text-align: center;
 }
 
 .fieldRightCorrection{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 1%;
+  text-align: center;
 }
 
 .fieldGlassType{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  padding: 4px 1px 4px 30px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 13%;
+
 }
 
 .fieldSex{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  padding: 4px 44px 4px 44px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 26%;
+  text-align: center;
 }
 
 .fieldColor{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  padding: 4px 21px 4px 21px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 22%;
+  text-align: center;
 }
 
 .fieldMinPrice{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 14%;
+  text-align: center;
 }
 
 .fieldMaxPrice{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 13%;
+  text-align: center;
 }
 
 .fieldShape{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  padding: 4px 20px 4px 15px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 20%;
+  text-align: center;
 }
 
+.searchSubmit{
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular;
+  padding: 10px 50px 10px 50px;
+  margin: 15% 0 15% 25%;
+}
+
+.titleResult{
+  font-family: MontserratRegular;
+  font-size: 1.1rem;
+  color: #5b5b5b;
+  margin: 10% 0;
+  display: inline-block;
+
+}
+
+.resultatLineLeft{
+  width: 25%;
+  margin-bottom: 2%;
+  display: inline-block;
+  margin-left: 9%;
+  margin-right: 5%;
+}
+
+.resultatLineRight{
+  width: 25%;
+  margin-bottom: 2%;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.blockBrand{
+  font-family: MontserratRegular;
+  font-size: 1rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.blockSex{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockShape{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockLeftCorrection{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockRightCorrection{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockPrice{
+  font-family: MontserratRegular;
+  font-size: 1rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockViewProduct{
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.blockVendor{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blockLinkArticle{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b;
+  margin-bottom: 5%;
+  margin-left: 30%;
+}
+
+/*---VIEW ARTICLE---*/
+
+.sectionViewArticle{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+}
+
+.titleArticleBrand{
+  font-family: MontserratRegular;
+  font-size: 1.6rem;
+  color: #5b5b5b;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.articleSex{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleShape{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleLeftCorrection{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleRightCorrection{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleGlassType{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleColor{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.titleDimentions{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleGlassDiameter{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleGlassBridge{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articleGlassArm{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.articlePrice{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.pic{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  display: block;
+}
+
+.articleImg{
+  width: 30%;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.articleUser{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.basket{
+  font-family: MontserratRegular;
+  color: #fff;
+  background-color: #06c790;
+  width: 47%;
+  padding: 2% 10% 2% 10%;
+  text-align: center;
+  margin-left: 17%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/*---SELL---*/
+
+.sellSection{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+  padding-top: 10%;
+}
+
+.textSell{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.textSellImg{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.fieldSellBrand{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellSex{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 32%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellShape{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 24%;
+  margin-bottom: 5%;
+  width: 51%;
+}
+
+.sellLeftCorrection{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 4%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellRightCorrection{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 0%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellGlassDiameter{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellGlassBridge{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellGlassArm{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 16%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellGlassType{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  width: 51%;
+}
+
+.sellColor{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 26%;
+  margin-bottom: 5%;
+  width: 51%;
+}
+
+.sellPrice{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 27%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+
+.sellImageFile{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.sellSubmit{
+  border: none;
+  background-color: #06c790;
+  color: #fff;
+  font-family: MontserratRegular;
+  padding: 10px 50px 10px 50px;
+  margin: 10% 0 10% 25%;
+}
 
 /*---LOGIN---*/
+
+.sectionLogin{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+}
 
 .titleLogin{
   font-family: MontserratRegular;
@@ -394,49 +817,59 @@
   font-size: 1.3rem;
 }
 
-.fieldEmail{
+.loginEmail{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 20px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin: 5% 0 5% 20%;
+  text-align: center;
 }
 
-.fieldPassword{
+.loginPassword{
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin: 20px 20px 10px 65px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin: 5% 0 5% 20%;
 }
 
 .blockBox{
   display: block;
-  font-family: MontserratHairline;
-  color: #d0d0d0;
-  margin-left: 60px;
-  margin-bottom: 20px;
+  font-family: MontserratLight;
+  color: #5b5b5b;
+  margin-left: 25%;
+  margin-bottom: 5%;
   font-size: 0.7rem;
 }
 
 .lostPassword{
-  font-family: MontserratHairline;
+  font-family: MontserratLight;
   display: inline-block;
-  color: #d0d0d0;
+  color: #5b5b5b;
   font-size: 0.8rem;
-  margin-left: 80px;
+  margin-left: 25%;
 }
 
-.fieldSubmit{
+.loginSubmit{
   border: none;
   background-color: #06c790;
   color: #fff;
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
-  margin: 40px 5px 60px 65px;
+  margin: 10% 0 10% 20%;
 }
 
 /*---PROFILE---*/
+
+.sectionProfile{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
 
 .picProfil{
   height: 80px;
@@ -460,12 +893,14 @@
 
 .linkEditProfile{
   background-color: #06c790;
-  width: 49%;
+  width: 70%;
   font-family: MontserratRegular;
+  text-align: center;
   color: #fff;
-  padding: 3% 10% 3% 10%;
+  padding: 10px 0;
   margin-left: 15%;
   margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .titleSell{
@@ -486,7 +921,7 @@
   padding-bottom: 5%;
 }
 
-.sellUser{
+.sectionSellUser{
   width: 95%;
   background-color: #fff;
   border: 1px solid #efefef;
@@ -534,6 +969,7 @@
   border: 1px solid #acecda;
   font-size: 0.8rem;
   margin-left: 7%;
+  text-align: center;
 }
 
 .lastArticle{
@@ -559,54 +995,60 @@
 
 /*---EDIT PROFILE---*/
 
-.fieldUsername{
-  border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #5b5b5b;
-  margin-left: 14%;
+.sectionEditProfile{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 10%;
 }
 
-.fieldLastname{
+.editLastname{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #5b5b5b;
-  margin-left: 15%;
-}
-
-.fieldFirstname{
-  border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #5b5b5b;
-  margin-left: 14%;
-}
-
-.fieldEditEmail{
-  border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
-  font-family: MontserratHairline;
-  color: #5b5b5b;
-  margin-left: 23%;
-}
-
-.fieldPasswordFirst{
-  border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
   margin-left: 15%;
+  width: 40%;
 }
 
-.fieldPasswordSecond{
+.editFirstname{
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
+  margin-left: 15%;
+  width: 40%;
 }
 
-.required{
+.editEditEmail{
+  border: 1px solid #d0d0d0;
+  padding: 4px 0;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 24%;
+  width: 40%;
+}
+
+.editPasswordFirst{
+  border: 1px solid #d0d0d0;
+  padding: 4px 0;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 16%;
+  width: 40%;
+}
+
+.editPasswordSecond{
+  border: 1px solid #d0d0d0;
+  padding: 4px 0;
+  font-family: MontserratHairline;
+  color: #5b5b5b;
+  margin-left: 0;
+  width: 40%;
+}
+
+.textEditProfile{
   font-family: MontserratRegular;
   font-size: 0.8rem;
   display: inline-block;
@@ -626,11 +1068,21 @@
   font-family: MontserratRegular;
 }
 
-.submitFileImage{
+.editFileImage{
   margin: 0 10% 10% 0;
   border: none;
   color: #5b5b5b;
   font-family: MontserratRegular
+}
+/*---REGISTER---*/
+
+.sectionRegister{
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-left: 2%;
+  margin-bottom: 15%;
+  padding-top: 10%;
 }
 
 .submitRegister{
@@ -642,6 +1094,62 @@
   color: #fff;
   font-family: MontserratRegular;
 }
+
+.textRegister{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+.fieldUsername{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 22%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.fieldLastname{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 23%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.fieldFirstname{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 23%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.fieldEmail{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 34%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.fieldPasswordFirst{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 24%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.fieldPasswordSecond{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  margin-left: 4%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
 
 @media (min-width: 641px){
   /*---HEADER---*/
@@ -657,7 +1165,8 @@
 
   /*---MENU HAMBURGER---*/
   #sidebar{
-    width: 220px;
+    width: 230px;
+    height: 700px;
   }
 
   #sidebar-btn{
@@ -710,12 +1219,12 @@
 
   .thirdText{
     font-size: 1.2rem;
-    margin: 5% 5% 10% 25%;;
+    margin: 5%;
   }
 
   .imgApp{
     width: 31%;
-    margin-left: 18%;
+    margin-left: 13%;
     margin-bottom: 10%;
   }
 
@@ -738,43 +1247,887 @@
   .textLink{
     font-size: 1rem;
   }
+
+  /*---LOGIN---*/
+
+  .titleLogin{
+    margin: 5% 0 5% 35%;
+    font-size: 1.8rem;
+  }
+
+  .loginEmail{
+    margin: 5% 5% 5% 20%;
+    width: 50%;
+    font-size: 1.4rem;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .loginPassword{
+    margin: 5% 5% 5% 20%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .blockBox{
+    margin-left: 30%;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+  }
+
+  .lostPassword{
+    margin-left: 30%;
+    font-size: 1.2rem;
+  }
+
+  .loginSubmit{
+    padding: 20px 10px 20px 10px;
+    margin: 10% 0 10% 25%;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  /*---REGISTER---*/
+
+  .textRegister{
+    font-size: 1.4rem;
+    margin-left: 20%;
+  }
+
+  .fieldUsername{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 17%;
+  }
+
+  .fieldFirstname{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 17%;
+  }
+
+  .fieldLastname{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 18%;
+  }
+
+  .fieldEmail{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 25%;
+  }
+
+  .fieldPasswordFirst{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 18%;
+  }
+
+  .fieldPasswordSecond{
+    width: 40%;
+    padding: 8px 0;
+    margin-left: 5%;
+  }
+
+  .submitRegister{
+    padding: 15px 10px;
+    margin: 10% 10% 10% 26%;
+    font-size: 1.4rem;
+  }
+
+  /*---PROFILE---*/
+  .picProfil{
+    width: 100px;
+    height: 100px;
+    margin-left: 40%;
+  }
+
+  .userInfos{
+    margin-left: 35%;
+  }
+
+  .titleUser{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .textProfile{
+    font-size: 1rem;
+  }
+
+  .linkEditProfile{
+    width: 50%;
+    padding: 20px 0;
+    margin-left: 25%;
+  }
+
+  .titleSell{
+    font-size: 1.4rem;
+  }
+
+  .sellBlock{
+    height: 165px;
+  }
+
+  .picSell{
+    padding: 0 5px;
+    line-height: 234px;
+    height: 166px;
+  }
+
+  .blockInceptions{
+    width: 47%;
+    margin-left: 20%;
+  }
+
+  .sellBrand{
+    font-size: 1.2rem;
+  }
+
+  .viewSell{
+    padding: 10px 0;
+    font-size: 1rem;
+    margin-left: 11%;
+  }
+
+  .titleArticle{
+    font-size: 1.4rem;
+  }
+
+  .lastPic{
+    height: 203px;
+    width: 35%;
+    line-height: 270px;
+    margin-left: 8%;
+  }
+
+  /*---EDIT PROFIL---*/
+
+  .textEditProfile{
+    font-size: 1.4rem;
+    margin-left: 12%;
+  }
+
+  .editFileImage{
+    font-size: 1rem;
+    width: 54%;
+  }
+
+  .editLastname{
+    padding: 10px 0;
+    font-size: 1.2rem;
+    margin-left: 15%;
+  }
+
+  .editFirstname{
+    margin-left: 15%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .editEditEmail{
+    margin-left: 23%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .editPasswordFirst{
+    margin-left: 16%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .editPasswordSecond{
+    margin-left: 2%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .editSubmit{
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  /*---SEARCH PAGE---*/
+
+  .textSearch{
+    margin-left: 20%;
+    font-size: 1.4rem;
+  }
+
+  .fieldBrand{
+    padding: 12px 0;
+    margin-left: 30%;
+    width: 30%;
+  }
+
+  .fiedlLeftCorrection{
+    margin-left: 16%;
+    padding: 12px 0;
+    width: 30%;
+  }
+
+  .fieldRightCorrection{
+    margin-left: 13%;
+    padding: 12px 0;
+    width: 30%;
+  }
+
+  .fieldGlassType{
+    margin-left: 25%;
+    padding: 12px 0;
+    width: 30%;
+  }
+
+  .fieldSex{
+    padding: 12px 0;
+    width: 30%;
+    margin-left: 36%;
+  }
+
+  .fieldColor{
+    padding: 12px 0;
+    width: 30%;
+    margin-left: 33%;
+  }
+
+  .fieldMinPrice{
+    padding: 12px 0;
+    width: 30%;
+    margin-left: 26%;
+  }
+
+  .fieldMaxPrice{
+    padding: 12px 0;
+    width: 30%;
+    margin-left: 25%;
+  }
+
+  .fieldShape{
+    padding: 12px 0;
+    width: 30%;
+    margin-left: 31%;
+  }
+
+  .searchSubmit{
+    padding: 15px 0;
+    width: 50%;
+    font-size: 1.4rem;
+    margin: 15% 0 15% 25%;
+  }
+
+  .resultatLineLeft{
+    width: 30%;
+    margin-bottom: 1%;
+    margin-left: 7%;
+  }
+
+  .titleResult{
+    font-size: 1.6rem;
+  }
+
+  .resultatLineRight{
+    width: 30%;
+    margin-bottom: 1%;
+  }
+
+  .blockBrand{
+    font-size: 1.5rem;
+  }
+
+  .blockSex{
+    font-size: 1.1rem;
+  }
+
+  .blockShape{
+    font-size: 1.1rem;
+  }
+
+  .blockLeftCorrection{
+    font-size: 1.1rem;
+  }
+
+  .blockRightCorrection{
+    font-size: 1.1rem;
+  }
+
+  .blockPrice{
+    font-size: 1.3rem;
+  }
+
+  .blockViewProduct{
+    width: 35%;
+    margin-left: 35%;
+  }
+
+  .blockVendor{
+    font-size: 1rem;
+  }
+
+  .blockLinkArticle{
+    font-size: 1.3rem;
+    margin-left: 35%;
+  }
+
+  /*---VIEW ARTICLE---*/
+
+  .titleArticleBrand{
+    font-size: 2.4rem;
+  }
+
+  .articleSex{
+    font-size: 1.4rem;
+  }
+
+  .articleShape{
+    font-size: 1.4rem;
+  }
+
+  .articleLeftCorrection{
+    font-size: 1.4rem;
+  }
+
+  .articleRightCorrection{
+    font-size: 1.4rem;
+  }
+
+  .articleGlassType{
+    font-size: 1.4rem;
+  }
+
+  .articleColor{
+    font-size: 1.4rem;
+  }
+
+  .titleDimentions{
+    font-size: 1.4rem;
+  }
+
+  .articleGlassDiameter{
+    font-size: 1.4rem;
+  }
+
+  .articleGlassBridge{
+    font-size: 1.4rem;
+  }
+
+  .articleGlassArm{
+    font-size: 1.4rem;
+  }
+
+  .articlePrice{
+    font-size: 1.4rem;
+  }
+
+  .articleUser{
+    font-size: 1.4rem;
+  }
+
+  .pic{
+    font-size: 1.4rem;
+  }
+
+  .basket{
+    margin-left: 25%;
+    width: 50%;
+    padding: 15px 0;
+    font-size: 1.4rem;
+  }
+
+  /*---SELL---*/
+
+  .textSell{
+    font-size: 1.6rem;
+    margin-left: 10%;
+  }
+
+  .textSellImg{
+    font-size: 1.2rem;
+    margin-left: 10%;
+  }
+
+  .fieldSellBrand{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 27%;
+  }
+
+  .sellSex{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 32%;
+  }
+
+  .sellShape{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 26%;
+  }
+
+  .sellLeftCorrection{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 10%;
+  }
+
+  .sellRightCorrection{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 6%;
+  }
+
+  .sellGlassDiameter{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 9%;
+  }
+
+  .sellGlassBridge{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 14%;
+  }
+
+  .sellGlassArm{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 19%;
+  }
+
+  .sellGlassType{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 18%;
+  }
+
+  .sellColor{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 27%;
+  }
+
+  .sellPrice{
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-left: 28%;
+    margin-bottom: 10%;
+  }
+
+  .sellImageFile{
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  .sellSubmit{
+    padding: 20px 0;
+    text-align: center;
+    margin: 10% 0 10% 30%;
+    width: 40%;
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1045px){
+
+  /*---CONTAINER---*/
+
+  .container{
+    padding: 0;
+  }
+
   /*---HEADER---*/
+
   .menu{
     position: absolute;
     width: 100%;
     z-index: 1;
+    opacity: 0.3;
+    background-color: #000;
+  }
+
+  .desktopMenu li{
+    display: inline-block;
+  }
+
+  .blockMarket{
+    display: none;
+  }
+
+  .blockLogo{
+    display: none;
+  }
+
+  .desktopMenu{
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .linkHomeMenu{
+    font-family: MontserratRegular;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 3%;
+  }
+
+  .leftLogo{
+    margin-right: 8%;
+  }
+
+  .rightLogo{
+    margin-left: 10%;
+  }
+
+  .blockLogoWhite{
+    width: 15%;
+    display: inline-block;
+    margin-top: 1%;
   }
 
   /*---MENU HAMBURGER---*/
   #sidebar{
-    position: inherit;
-    display: inline-block;
+    display: none;
   }
 
-  .main-menu{
-    display: inline-block;
+  #sidebar.visible{
+    display: none;
   }
 
   /*---FIRST SECTION---*/
 
+  .selectProduct{
+    width: 60%;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left: 22%;
+  }
 
+  .newProduct{
+    width: 95%;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .desktopImg{
+    display: inline-block;
+  }
+
+  .mobileImg{
+    display: none;
+  }
+
+  .title{
+    font-size: 4.5rem;
+    margin-top: 10%;
+  }
+
+  .text{
+    font-family: MontserratRegular;
+    font-size: 1.6rem;
+    bottom: 45%;
+  }
+
+  .titleLineLeft{
+    margin-bottom: 1%;
+    margin-left: 5%;
+    width: 20%;
+  }
+
+  .titleSelect{
+    font-size: 2rem;
+    margin: 5% 5%
+  }
+
+  .titleLineRight{
+    width: 20%;
+    margin-bottom: 1%;
+    margin-left: 0;
+  }
+
+  .select{
+    width: 30%;
+    margin-left: 13%;
+    margin-bottom: 5%;
+    border: 1px solid #ededed;
+  }
+
+  .selectBrand{
+    font-size: 1.8rem;
+  }
+
+  .selectPrice{
+    font-size: 1.8rem;
+  }
   /*---SECOND SECTION---*/
 
-
+  .newProduct {
+    width: 60%;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left: 22%;
+  }
 
   /*---THIRD SECTION---*/
+  .sectionGlass{
+    width: 60%;
+    margin-left: 22%;
+  }
 
+  .secondText{
+    font-size: 1.5rem;
+  }
+
+  .textGlass{
+    left: 10%;
+    font-size: 2rem;
+  }
+
+  .optical{
+    margin-left: 18%;
+    margin-right: 5%;
+  }
+
+  .sunOpticalGlass{
+    margin-left: 18%;
+    margin-right: 5%;
+  }
+
+  .imgGlass{
+    width: 30%;
+    margin-bottom: 5%;
+  }
 
 
   /*---FOR SECTION---*/
 
+  .sectionApp{
+    display: none;
+  }
 
+  .thirdText{
+    display: none;
+  }
+
+  .imgApp{
+    display: none;
+  }
   /*---FIVE SECTION---*/
 
 
   /*---FOOTER---*/
 
+  .footer{
+    padding: 0;
+  }
+
+  .footerTitle{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 3% 3% 0 3%;
+  }
+
+  .textLink{
+    display: inline-block;
+    margin: 0 1%;
+    font-size: 1rem;
+  }
+
+  .textLinkLeft{
+    margin-left: 4%;
+    margin-top: 5%;
+  }
+
+  .lineLeft{
+    width: 20%;
+    margin-left: 20%;
+    margin-bottom: 1%;
+    display: inline-block;
+  }
+
+  .lineRight{
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 1%;
+    float: none;
+    margin-right: 8%;
+  }
+
+  .imgAppFooter{
+    width: 15%;
+    margin-right: 1%;
+    float: right;
+    display: inline-block;
+  }
+
+  .footerLogo{
+    width: 15%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+  }
+
+  .lineFooter{
+    border: 1px solid;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mention{
+    margin-top: 1%;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+  }
+
+  /*---LOGIN---*/
+
+  .sectionLogin {
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
+
+  .loginEmail {
+    margin: 5% 5% 5% 23%;
+  }
+
+  .loginPassword {
+    margin: 5% 5% 5% 23%;
+  }
+
+  .loginSubmit {
+    margin: 10% 0 10% 26%;
+  }
+
+
+  /*---REGISTER---*/
+
+  .sectionRegister {
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    padding-top: 0;
+    display: inline-block;
+  }
+
+  .textRegister {
+    margin-left: 10%;
+  }
+
+  .fieldUsername {
+    margin-top: 8%;
+    margin-left: 24%;
+    margin-bottom: 8%;
+  }
+
+  .fieldLastname {
+    margin-left: 25%;
+    margin-bottom: 8%;
+  }
+
+  .fieldFirstname {
+    margin-left: 24%;
+    margin-bottom: 8%;
+  }
+
+  .fieldEmail {
+    margin-left: 33%;
+    margin-bottom: 8%;
+  }
+
+  .fieldPasswordFirst {
+    margin-left: 25%;
+    margin-bottom: 8%;
+  }
+
+  .fieldPasswordSecond {
+    margin-left: 9%;
+  }
+
+  .submitRegister {
+    margin: 10% 10% 10% 26%;
+  }
+
+  /*---EDIT PROFILE---*/
+
+  .sectionEditProfile {
+    width: 50%;
+    display: inline-block;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 15%;
+  }
+
+  .textEditProfile {
+    margin-left: 10%;
+  }
+
+  .editFileImage {
+    font-size: 1rem;
+    width: 63%;
+    margin: 0 0 10% 10%;
+  }
+
+  .editLastname {
+    margin-left: 20%;
+  }
+
+  .editFirstname {
+    margin-left: 19%;
+  }
+
+  .editEditEmail {
+    margin-left: 28%;
+  }
+
+  .editPasswordFirst {
+    margin-left: 20%;
+  }
+
+  .editPasswordSecond {
+    margin-left: 4%;
+  }
+
+  /*---PROFILE SHOW---*/
+
+  .sectionProfile {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+    display: inline-block;
+    padding-bottom: 0;
+  }
+
+  .sectionSellUser {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .lastArticle {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 0;
+  }
+
+  .picProfil{
+    margin-top: 5%;
+  }
 }

@@ -1,19 +1,19 @@
 {% extends 'UserBundle:Base:homepage.html.twig' %}
 
 {% block container %}
-
-<section class="first second third">
-    <div class="blockArticle">
-        <h1 class="title">SeeClop</h1>
-        <div class="homeImg">
-            <img src="{{ asset('assets/img/img-first-article.jpg') }}">
-        </div>
-        <p class="text">Chez nous acheté plus qu'une<br>
-            demi lunette
-        </p>
+<div class="blockArticle">
+    <h1 class="title">SeeClop</h1>
+    <div class="desktopImg">
+        <img src="{{ asset('assets/img/home_img.jpg') }}">
     </div>
-</section>
-<section>
+    <div class="mobileImg">
+        <img src="{{ asset('assets/img/img-first-article.jpg') }}">
+    </div>
+    <p class="text">Chez nous acheter plus qu'une demi paire de lunette
+    </p>
+</div>
+
+<section class="sectionSelect">
     <div class="selectProduct">
         <hr class="titleLineLeft"><h2 class="titleSelect">Nôtre séléction</h2><hr class="titleLineRight">
         <div class="select left">
@@ -30,7 +30,7 @@
         </div>
     </div>
 </section>
-<section>
+<section class="sectionNew">
     <div class="newProduct">
         <hr class="titleLineLeft"><h2 class="titleSelect">Les nouveautés</h2><hr class="titleLineRight">
         <div class="select left">
@@ -48,9 +48,8 @@
         </div>
     </div>
 </section>
-<section class="first second third">
-    <p class="secondText">Trouver la paire de lunette de vos rêve<br>
-        des maintenant
+<section class="sectionGlass">
+    <p class="secondText">Trouver la paire de lunette de vos rêve des maintenant
     </p>
     <div class="imgGlass optical"><img src="{{ asset('assets/img/optique-img.jpg') }}">
         <div class="textGlass">OPTIQUE</div>
@@ -65,7 +64,7 @@
         <div class="textGlass">FANTAISIE</div>
     </div>
 </section>
-<section class="first second third">
+<section class="sectionApp">
     <p class="thirdText">N'hésité pas à télécharger l'application<br>
         afin de rester informé des derniers<br>
         sorties et des nouveautés.
