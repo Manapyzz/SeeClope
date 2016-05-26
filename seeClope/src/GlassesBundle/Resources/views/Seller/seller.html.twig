@@ -1,20 +1,50 @@
 {% extends 'UserBundle:Base:homepage.html.twig' %}
 {% block container %}
-{{ form_start(form) }}
-    {{ form_row(form.brand) }}
-    {{ form_row(form.sex) }}
-    {{ form_row(form.shape) }}
-    {{ form_row(form.leftcorrection) }}
-    {{ form_row(form.rightcorrection) }}
-    {{ form_row(form.glassdiameter) }}
-    {{ form_row(form.glassbridge) }}
-    {{ form_row(form.glassarm) }}
-    {{ form_row(form.glasstype) }}
-    {{ form_row(form.color) }}
-    {{ form_row(form.price) }}
-    {{ form_row(form.firstImageFile) }}
-    {{ form_row(form.secondImageFile) }}
-    {{ form_row(form.thirdImageFile) }}
-<button type="submit">Put Your Item on Sale</button>
-{{ form_end(form) }}
+    <section class="sellSection">
+        {{ form_start(form) }}
+        <span class="textSell">{{ form_label(form.brand) }}</span>
+        {{ form_errors(form.brand) }}
+        {{ form_widget(form.brand, {'attr' : {'class' : 'fieldSellBrand'}}) }}
+        <span class="textSell">{{ form_label(form.sex) }}</span>
+        {{ form_errors(form.sex) }}
+        {{ form_widget(form.sex, {'attr' : {'class' : 'sellSex'}}) }}
+        <span class="textSell">{{ form_label(form.shape) }}</span>
+        {{ form_errors(form.shape) }}
+        {{ form_widget(form.shape, {'attr' : {'class' : 'sellShape'}}) }}
+        <span class="textSell">{{ form_label(form.leftcorrection) }}</span>
+        {{ form_errors(form.leftcorrection) }}
+        {{ form_widget(form.leftcorrection, {'attr' : {'class' : 'sellLeftCorrection'}}) }}
+        <span class="textSell">{{ form_label(form.rightcorrection) }}</span>
+        {{ form_errors(form.rightcorrection) }}
+        {{ form_widget(form.rightcorrection, {'attr' : {'class' : 'sellRightCorrection'}}) }}
+        <span class="textSell">{{ form_label(form.glassdiameter) }}</span>
+        {{ form_errors(form.glassdiameter) }}
+        {{ form_widget(form.glassdiameter, {'attr' : {'class' : 'sellGlassDiameter'}}) }}
+        <span class="textSell">{{ form_label(form.glassbridge) }}</span>
+        {{ form_errors(form.glassbridge) }}
+        {{ form_widget(form.glassbridge, {'attr' : {'class' : 'sellGlassBridge'}}) }}
+        <span class="textSell">{{ form_label(form.glassarm) }}</span>
+        {{ form_errors(form.glassarm) }}
+        {{ form_widget(form.glassarm, {'attr' : {'class' : 'sellGlassArm'}}) }}
+        <span class="textSell">{{ form_label(form.glasstype) }}</span>
+        {{ form_errors(form.glasstype) }}
+        {{ form_widget(form.glasstype, {'attr' : {'class' : 'sellGlassType'}}) }}
+        <span class="textSell">{{ form_label(form.color) }}</span>
+        {{ form_errors(form.color) }}
+        {{ form_widget(form.color, {'attr' : {'class' : 'sellColor'}}) }}
+        <span class="textSell">{{ form_label(form.price) }}</span>
+        {{ form_errors(form.price) }}
+        {{ form_widget(form.price, {'attr' : {'class' : 'sellPrice'}}) }}
+        <span class="textSellImg">{{ form_label(form.firstImageFile) }}</span>
+        {{ form_errors(form.firstImageFile) }}
+        {{ form_widget(form.firstImageFile, {'attr' : {'class' : 'sellImageFile'}}) }}
+        <span class="textSellImg">{{ form_label(form.secondImageFile) }}</span>
+        {{ form_errors(form.secondImageFile) }}
+        {{ form_widget(form.secondImageFile, {'attr' : {'class' : 'sellImageFile'}}) }}
+        <span class="textSellImg">{{ form_label(form.thirdImageFile) }}</span>
+        {{ form_errors(form.thirdImageFile) }}
+        {{ form_widget(form.thirdImageFile, {'attr' : {'class' : 'sellImageFile'}}) }}
+        <input type="submit" value="PUBLIER" class="sellSubmit">
+        {{ form_end(form) }}
+    </section>
 {% endblock %}

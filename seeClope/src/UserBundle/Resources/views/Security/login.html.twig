@@ -2,28 +2,30 @@
 
 {% block container %}
 
-{% if error %}
-    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
-<h2 class="titleLogin">Connexion</h2>
-<div class="blockLogin">
-    <form action="{{ path('login') }}" method="post">
-        <label for="username"></label>
-        <input class="fieldEmail" type="text" id="username" name="_username" value="Adresse Email" />
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <section class="sectionLogin">
+        <h2 class="titleLogin">Connexion</h2>
+        <div class="blockLogin">
+            <form action="{{ path('login') }}" method="post">
+                <label for="username"></label>
+                <input class="loginEmail" type="text" id="username" name="_username" value="Adresse Email"/>
 
-        <label for="password"></label>
-        <input class="fieldPassword" type="password" id="password" name="_password" value="Mot de passe" />
+                <label for="password"></label>
+                <input class="loginPassword" type="password" id="password" name="_password" value="Mot de passe"/>
 
-        {#
-            If you want to control the URL the user
-            is redirected to on success (more details below)
-            <input type="hidden" name="_target_path" value="/account" />
-        #}
-        <div class="blockBox">
-        <input type="checkbox" name="saveMe" id="saveMe"> Se souvenir de moi<label for="saveMe"></label>
+                {#
+                    If you want to control the URL the user
+                    is redirected to on success (more details below)
+                    <input type="hidden" name="_target_path" value="/account" />
+                #}
+                <div class="blockBox">
+                    <input type="checkbox" name="saveMe" id="saveMe"> Se souvenir de moi<label for="saveMe"></label>
+                </div>
+                <a class="lostPassword" href="#">Mot de passe oublier ?</a>
+                <input class="loginSubmit" type="submit" value="Connexion"/>
+            </form>
         </div>
-        <a class="lostPassword" href="#">Mot de passe oublier ?</a>
-        <input class="fieldSubmit" type="submit" value="Connexion"/>
-    </form>
-</div>
+    </section>
 {% endblock %}

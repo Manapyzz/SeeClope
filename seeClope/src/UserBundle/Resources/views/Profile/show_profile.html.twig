@@ -1,6 +1,6 @@
 {% extends 'UserBundle:Base:homepage.html.twig' %}
 {% block container %}
-    <section class="profil">
+    <section class="sectionProfile">
         <div class="picProfil"><img src="/assets/images/profile/{{ profile.imageName }}"></div>
         <div class="userInfos">
             <h2 class="titleUser">Bonjour {{ profile.username }} !</h2>
@@ -40,7 +40,7 @@
 
         {% endif %}
     </section>
-    <section class="sellUser">
+    <section class="sectionSellUser">
         <h2 class="titleSell">VOS VENTES</h2>
         <div class="sellBlock">
             <div class="picSell"><img src="{{ asset('assets/img/sell_pic.jpg') }}"></div>
