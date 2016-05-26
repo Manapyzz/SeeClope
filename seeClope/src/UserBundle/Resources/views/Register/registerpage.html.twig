@@ -2,32 +2,32 @@
 {% block container %}
 <section class="sectionRegister">
     {{ form_start(form) }}
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.username) }}</span>
         {{ form_errors(form.username) }}
         {{ form_widget(form.username, { 'attr': {'class': 'fieldUsername'} }) }}
     </div>
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.lastname) }}</span>
         {{ form_errors(form.lastname) }}
         {{ form_widget(form.lastname, { 'attr': {'class': 'fieldLastname'} }) }}
     </div>
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.firstname) }}</span>
         {{ form_errors(form.firstname) }}
         {{ form_widget(form.firstname, { 'attr': {'class': 'fieldFirstname'} }) }}
     </div>
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.email) }}</span>
         {{ form_errors(form.email) }}
         {{ form_widget(form.email, { 'attr': {'class': 'fieldEmail'} }) }}
     </div>
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.plainPassword.first) }}</span>
         {{ form_errors(form.plainPassword.first) }}
         {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'fieldPasswordFirst'} }) }}
     </div>
-    <div>
+    <div class="blockRegister">
         <span class="textRegister">{{ form_label(form.plainPassword.second) }}</span>
         {{ form_errors(form.plainPassword.second) }}
         {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'fieldPasswordSecond'} }) }}
