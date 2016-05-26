@@ -9,6 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use UserBundle\Form\Type\EditProfileType;
+use Symfony\Component\HttpFoundation\Response;
 
 class ProfileController extends Controller
 {
@@ -30,22 +31,52 @@ class ProfileController extends Controller
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
 
+            $jsonArray = array();
+
+            $jsonArray[0] = 'Rating: '.$request->get('profile_comment')['rating'];
+            $jsonArray[1] = 'Review: '.$request->get('profile_comment')['review'];
+            $jsonArray[2] = 'Posted By '. $this->getUser()->getUsername();
+
             // 4) save the User!
             $em = $this->getDoctrine()->getManager();
             $em->persist($comment);
             $em->flush();
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
-            return $this->redirectToRoute('show_profile', array('username' => $username));
+
+            return new Response(json_encode($jsonArray));
         }
 
-        $userComment = $this->getDoctrine()->getManager()
-            ->getRepository('EntityBundle:ProfileComment')
-            ->findByProfileId($userProfile->getId());
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            'SELECT p
+            FROM EntityBundle:ProfileComment p
+            WHERE p.profileId = :profileId
+            ORDER BY p.id DESC'
+        )->setParameter('profileId', $userProfile->getId());
+
+        $userComment = $query->getResult();
+
+        $em = $this->getDoctrine()->getManager();
+        $rating = $em->createQuery(
+            'SELECT p.rating
+            FROM EntityBundle:ProfileComment p'
+        );
+
+        $resultRating = $rating->getResult();
+
+        $average = 0;
+
+        for($i = 0; $i < count($resultRating); $i++)
+        {
+            $average += $resultRating[$i]['rating'];
+        }
+
+        $average = $average / count($resultRating);
 
         return $this->render(
             'UserBundle:Profile:show_profile.html.twig', array(
-                'profile' => $userProfile, 'commentForm' => $form->createView(), 'userComment' => $userComment
+                'profile' => $userProfile, 'commentForm' => $form->createView(), 'userComment' => $userComment, 'average' => $average
             )
         );
     }
