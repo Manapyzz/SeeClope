@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="849f058d-8f67-4787-95b6-12e41d9c0265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seeClope/web/assets/img/black_footer_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seeClope/web/assets/img/home_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seeClope/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Search/search.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/one_page_article.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/one_page_article.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Seller/seller.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Seller/seller.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/footer.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/homepage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/homepage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Homepage/homepage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Homepage/homepage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/editProfile.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/editProfile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Register/registerpage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Register/registerpage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Security/login.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Security/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" />
-    </list>
+    <list default="true" id="849f058d-8f67-4787-95b6-12e41d9c0265" name="Default" comment="" />
     <ignored path="SeeClope.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -677,12 +657,12 @@
       <workItem from="1463995238673" duration="18009000" />
       <workItem from="1464123541581" duration="469000" />
       <workItem from="1464124333668" duration="17929000" />
-      <workItem from="1464204067982" duration="22101000" />
+      <workItem from="1464204067982" duration="22185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169560000" />
+    <option name="totallyTimeSpent" value="169644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
