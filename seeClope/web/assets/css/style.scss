@@ -58,10 +58,10 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin: 17% 0 5% 10%;
+  margin: 8% 0 0 0;
   position: absolute;
   top: 0;
-  right: -60px;
+  right: -90px;
 }
 
 #sidebar-btn span {
@@ -95,7 +95,6 @@
   position: relative;
   background-color: #f5f5f5;
   height: 100%;
-  padding: 10% 0;
 }
 
 /*---FIRST SECTION---*/
@@ -679,114 +678,102 @@
 /*---SELL---*/
 
 .sellSection{
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%;
-  padding-top: 10%;
+  margin: 0 auto;
+}
+
+.sell-block{
+  margin: 15px 0;
+  padding: 0 15px;
 }
 
 .textSell{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 5%;
-  margin-bottom: 5%;
 }
 
 .textSellImg{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 5%;
-  margin-bottom: 5%;
 }
 
 .fieldSellBrand{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 25%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellSex{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 32%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellShape{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 24%;
-  margin-bottom: 5%;
-  width: 51%;
+  float: right;
+  width: 40%;
 }
 
 .sellLeftCorrection{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 4%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellRightCorrection{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 0%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellGlassDiameter{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 3%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellGlassBridge{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 10%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellGlassArm{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 16%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellGlassType{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  width: 51%;
+  float: right;
+  width: 40%;
 }
 
 .sellColor{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 26%;
-  margin-bottom: 5%;
-  width: 51%;
+  float: right;
+  width: 40%;
 }
 
 .sellPrice{
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 27%;
-  margin-bottom: 5%;
-  width: 50%;
+  float: right;
+  width: 40%;
 }
 
 .sellImageFile{
@@ -802,7 +789,7 @@
   color: #fff;
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
-  margin: 10% 0 10% 25%;
+  margin: 10px 0 35px 75px;
 }
 
 /*---LOGIN---*/
@@ -866,12 +853,21 @@
 /*---PROFILE---*/
 
 .sectionProfile{
-  width: 95%;
+  width: 310px;
+  margin: 0 auto;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 5%;
+}
+
+.titleUser{
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.rank{
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b
 }
 
 .picProfil{
@@ -879,19 +875,14 @@
   width: 80px;
   border: 1px solid transparent;
   border-radius: 50px;
-  margin-left: 36%;
-  margin-bottom: 10%;
+  margin-left: 110px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .userInfos{
   font-family: MontserratHairline;
-  text-align: left;
-  margin-left: 30%;
-  margin-bottom: 4%;
-}
-
-.textProfile{
-  font-size: 0.8rem;
+  text-align: center;
 }
 
 .linkEditProfile{
@@ -901,9 +892,76 @@
   text-align: center;
   color: #fff;
   padding: 10px 0;
-  margin-left: 15%;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin: 25px 0 25px 50px;
+}
+
+.sectionComment{
+  width: 310px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-top: 40px;
+}
+
+.postTitleComment{
+  font-family: MontserratRegular;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #5b5b5b;
+  margin: 20px 0
+}
+
+.rating{
+  font-size: 1.2rem;
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+}
+
+.fieldRating{
+  width: 15%;
+  margin-left: 57px;
+}
+
+.reviews{
+  margin-top: 35px;
+  font-size: 1.2rem;
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+}
+
+.areaComment{
+  margin-left: 50px;
+}
+
+#profile_comment_submit{
+  background-color: #06c790;
+  width: 50%;
+  font-family: MontserratRegular;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  margin: 40px 0 25px 80px;
+  border: none;
+}
+
+.sectionViewComment{
+  width: 310px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.blockComment{
+  font-family: MontserratLight;
+}
+
+.titleComment{
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 25px 0;
 }
 
 .titleSell{
@@ -925,12 +983,12 @@
 }
 
 .sectionSellUser{
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 5%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .sellBlock{
@@ -976,12 +1034,11 @@
 }
 
 .lastArticle{
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 10%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .lastPic{
@@ -1346,29 +1403,72 @@
   }
 
   /*---PROFILE---*/
+
+  .sectionProfile {
+    width: 500px;
+  }
+
+  .rank {
+    font-size: 1rem;
+  }
+
   .picProfil{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin-left: 40%;
   }
 
-  .userInfos{
-    margin-left: 35%;
-  }
-
   .titleUser{
-    font-size: 1.5rem;
-    margin-bottom: 5%;
-  }
-
-  .textProfile{
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .linkEditProfile{
     width: 50%;
     padding: 20px 0;
-    margin-left: 25%;
+    margin: 40px 0 40px 130px;
+  }
+
+  .postTitleComment {
+    font-size: 1.8rem;
+    margin: 30px 0;
+  }
+
+  .rating {
+    font-size: 1.4rem;
+    margin-left: 70px;
+  }
+
+  .reviews {
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 1.4rem;
+  }
+
+  #profile_comment_submit {
+    font-size: 1.2rem;
+    margin: 40px 0 25px 140px;
+  }
+
+  .sectionViewComment {
+    width: 500px;
+  }
+
+  .titleComment {
+    font-size: 1.8rem;
+    margin: 40px 0;
+  }
+
+  .blockComment {
+    font-size: 1.2rem;
+    margin-left: 60px;
+  }
+
+  .sectionComment{
+    width: 500px;
+  }
+
+  .sectionSellUser {
+    width: 500px;
   }
 
   .titleSell{
@@ -1386,8 +1486,7 @@
   }
 
   .blockInceptions{
-    width: 47%;
-    margin-left: 20%;
+    margin-left: 88px;
   }
 
   .sellBrand{
@@ -1397,7 +1496,12 @@
   .viewSell{
     padding: 10px 0;
     font-size: 1rem;
-    margin-left: 11%;
+    margin-left: 35px;
+    width: 50%;
+  }
+
+  .lastArticle{
+    width: 500px;
   }
 
   .titleArticle{
@@ -1671,92 +1775,87 @@
 
   /*---SELL---*/
 
+  .sellSection{
+    width: 500px;
+  }
+
+  .sell-block{
+    margin: 30px 0;
+    padding: 0 25px;
+  }
+
   .textSell{
-    font-size: 1.6rem;
-    margin-left: 10%;
+    font-size: 1.4rem;
   }
 
   .textSellImg{
     font-size: 1.2rem;
-    margin-left: 10%;
   }
 
   .fieldSellBrand{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 27%;
   }
 
   .sellSex{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 32%;
   }
 
   .sellShape{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 26%;
   }
 
   .sellLeftCorrection{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 10%;
   }
 
   .sellRightCorrection{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 6%;
   }
 
   .sellGlassDiameter{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 9%;
   }
 
   .sellGlassBridge{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 14%;
   }
 
   .sellGlassArm{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 19%;
   }
 
   .sellGlassType{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 18%;
   }
 
   .sellColor{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 27%;
   }
 
   .sellPrice{
     width: 45%;
     font-size: 1.2rem;
     padding: 10px 0;
-    margin-left: 28%;
-    margin-bottom: 10%;
   }
 
   .sellImageFile{
@@ -1769,27 +1868,18 @@
     padding: 20px 0;
     text-align: center;
     margin: 10% 0 10% 30%;
-    width: 40%;
+    width: 50%;
     font-size: 1.2rem;
   }
 }
 
-@media (min-width: 1045px){
-
-  /*---CONTAINER---*/
-
-  .container{
-    padding: 0;
-  }
+@media (min-width: 1024px){
 
   /*---HEADER---*/
 
   .menu{
-    position: absolute;
     width: 100%;
-    z-index: 1;
-    opacity: 0.3;
-    background-color: #000;
+    background-color: #efefef;
   }
 
   .desktopMenu li{
@@ -1814,7 +1904,7 @@
   .linkHomeMenu{
     font-family: MontserratRegular;
     font-size: 1.5rem;
-    color: #fff;
+    color: #06c790;
     margin-left: 3%;
   }
 
@@ -2030,11 +2120,8 @@
   /*---LOGIN---*/
 
   .sectionLogin {
-    display: inline-block;
     width: 450px;
-    margin-left: 25%;
-    margin-bottom: 15%;
-    margin-top: 15%;
+    margin: 10% auto;
   }
 
   .loginEmail {
@@ -2160,4 +2247,176 @@
   .picProfil{
     margin-top: 5%;
   }
+}
+
+@media (min-width: 1400px) {
+
+  /*---HOMEPAGE---*/
+
+  .linkHomeMenu{
+    font-size: 2.5rem;
+    margin-left: 3%;
+    margin-right: 2%;
+  }
+
+  .title {
+    font-size: 6.5rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .textGlass {
+    left: 20%;
+  }
+
+  .selectProduct {
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .secondText {
+    font-size: 1.8rem;
+  }
+
+  .newProduct {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .secondText {
+    font-size: 1.8rem;
+    margin: 5% 0;
+  }
+
+  .sectionGlass {
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .footerTitle {
+    font-size: 2rem;
+  }
+
+  .lineLeft {
+    width: 30%;
+    margin-left: 8%;
+  }
+
+  .lineRight {
+    margin-right: 5%;
+    width: 30%;
+  }
+
+  .textLink {
+    font-size: 1.4rem;
+  }
+
+  .mention{
+    font-size: 1rem;
+  }
+
+  .sectionLogin{
+    margin: 0 auto;
+  }
+
+  /*---SEARCH---*/
+  .blockSearchArticle {
+    height: 55px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 140px;
+  }
+
+  .sectionSearch {
+    width: 850px;
+    margin: 10% auto;
+  }
+
+  .textSearch {
+    font-size: 2rem;
+  }
+
+  .fieldBrand{
+    font-size: 1.2rem;
+  }
+
+  .fiedlLeftCorrection{
+    font-size: 1.2rem;
+  }
+
+  .fieldRightCorrection{
+    font-size: 1.2rem;
+  }
+
+  .fieldGlassType{
+    font-size: 1.2rem;
+  }
+
+  .fieldSex{
+    font-size: 1.2rem;
+  }
+
+  .fieldColor{
+    font-size: 1.2rem;
+  }
+
+  .fieldMinPrice{
+    font-size: 1.2rem;
+  }
+
+  .fieldMaxPrice{
+    font-size: 1.2rem;
+  }
+
+  .fieldShape{
+    font-size: 1.2rem;
+  }
+
+  #search_search{
+    margin: 30px 0 40px 280px;
+    font-size: 1.6rem;
+  }
+
+  /*---RESULT---*/
+
+  .sectionResult{
+    width: 850px;
+    margin: 10% auto;
+  }
+
+  .titleResult {
+    font-size: 2.2rem;
+  }
+
+  .blockBrand {
+    font-size: 2.2rem;
+  }
+
+  .blockSex {
+    font-size: 1.6rem;
+  }
+
+  .blockShape {
+    font-size: 1.6rem;
+  }
+
+  .blockLeftCorrection {
+    font-size: 1.6rem;
+  }
+
+  .blockPrice {
+    font-size: 1.5rem;
+  }
+
+  .blockVendor {
+    font-size: 1.2rem;
+  }
+
+  .blockLinkArticle {
+    font-size: 1.6rem;
+    margin-left: 40%;
+  }
+
 }

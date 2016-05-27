@@ -4,36 +4,39 @@
         <div class="picProfil"><img src="/assets/images/profile/{{ profile.imageName }}"></div>
         <div class="userInfos">
             <h2 class="titleUser">Bonjour {{ profile.username }} !</h2>
+            <div class="rank">NOTE MOYENNE: {{ average }}/5</div>
         </div>
         <div class="linkEditProfile"><a href="/profile/edit">Modifier votre profil</a></div>
-
+    </section>
+    <section class="sectionComment">
+        <h2 class="postTitleComment">Poster un avis</h2>
         {% if profile.id != app.user.id %}
             {{ form_start(commentForm, {'attr': {'class':'profile_comment'}}) }}
             <div class="rating">
                 {{ form_label(commentForm.rating) }}
                 {{ form_errors(commentForm.rating) }}
-                {{ form_widget(commentForm.rating) }}
+                {{ form_widget(commentForm.rating, {'attr': {'class':'fieldRating'}}) }}
             </div>
             <div class="reviews">
                 {{ form_label(commentForm.review) }}
                 {{ form_errors(commentForm.review) }}
-                {{ form_widget(commentForm.review) }}
+                {{ form_widget(commentForm.review, {'attr': {'class':'areaComment'}}) }}
             </div>
             {{ form_end(commentForm) }}
         {% endif %} <br>
-
-        <div>
-            NOTE MOYENNE: {{ average }}
-        </div> <br><br>
-
+    </section>
+    <section class="sectionViewComment">
         <div class="allReviews">
-            {% if userComment|length > 0 %}
-            {% for item in userComment %}
-                Rating: {{ item.rating }}<br>
-                Review: {{ item.review }}<br>
-                Posted By <a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a><br><br>
-            {% endfor %}
-            {% elseif userComment|length == 0 %}
+            <h2 class="titleComment">Commentaires</h2>
+            <div class="blockComment">
+                {% if userComment|length > 0 %}
+                {% for item in userComment %}
+                    Rating: {{ item.rating }}<br>
+                    Review: {{ item.review }}<br>
+                    Posted By <a href="/profile/show/{{ item.user.username }}">{{ item.user.username }}</a><br><br>
+                {% endfor %}
+                {% elseif userComment|length == 0 %}
+            </div>
         </div>
 
         {% endif %}
