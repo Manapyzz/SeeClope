@@ -22,5 +22,6 @@
         {{ form_errors(form.plainPassword.second) }}
         {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'editPasswordSecond'} }) }}
         <input class="editSubmit" type="submit" value="Valider">
+        {{ form_end(form) }}
     </section>
 {% endblock %}

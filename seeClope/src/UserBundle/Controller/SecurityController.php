@@ -4,6 +4,8 @@ namespace UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use EntityBundle\Entity\Password;
+use UserBundle\Form\Type\ChangePasswordType;
 
 class SecurityController extends Controller
 {
@@ -17,6 +19,7 @@ class SecurityController extends Controller
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
 
+
         return $this->render(
             'UserBundle:Security:login.html.twig',
             array(
@@ -26,6 +29,8 @@ class SecurityController extends Controller
             )
         );
     }
+    
+    
 }
 
 

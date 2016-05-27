@@ -5,7 +5,7 @@ namespace GlassesBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use GlassesBundle\Form\Type\SearchType;
 use Symfony\Component\HttpFoundation\Request;
-
+use Symfony\Component\HttpFoundation\Response;
 
 class ArticlesController extends Controller
 {
@@ -105,6 +105,21 @@ class ArticlesController extends Controller
             )->setParameters($parameters);
 
             $articles = $query->getResult();
+
+            $jsonArray = array();
+
+            for($i= 0; $i < count($articles); $i++)
+            {
+                $jsonArray['brand'][$i] = $articles[$i]->getBrand();
+                $jsonArray['leftcorrection'][$i] = $articles[$i]->getLeftCorrection();
+                $jsonArray['rightcorrection'][$i] = $articles[$i]->getRightCorrection();
+                $jsonArray['glasstype'][$i] = $articles[$i]->getGlasstype();
+                $jsonArray['sex'][$i] = $articles[$i]->getSex();
+                $jsonArray['color'][$i] = $articles[$i]->getColor();
+                $jsonArray['shape'][$i] = $articles[$i]->getShape();
+            }
+
+            return new Response(json_encode($jsonArray));
         }
 
         return $this->render(

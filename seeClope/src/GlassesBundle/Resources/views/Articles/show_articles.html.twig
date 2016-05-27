@@ -30,6 +30,7 @@
         {{ form_errors(searchForm.shape) }}
         {{ form_widget(searchForm.shape, { 'attr': {'class': 'fieldShape'} }) }}
         <input type="submit" value="Chercher" class="searchSubmit">
+        {{ form_end(searchForm) }}
 </section>
 <section class="sectionResult">
         {% for item in articles %}

@@ -37,8 +37,7 @@ class SearchType extends AbstractType
             ))
             ->add('shape', ShapeSearchType::class, array(
                 'required' => false
-            ))
-            ->add('search', SubmitType::class );
+            ));
     }
 
 }
