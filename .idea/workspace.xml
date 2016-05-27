@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849f058d-8f67-4787-95b6-12e41d9c0265" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Search/search.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/seeclop.sql" afterPath="$PROJECT_DIR$/seeClope/seeclop.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Controller/ArticlesController.php" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Controller/ArticlesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Form/Type/SearchType.php" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Form/Type/SearchType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/RegistrationController.php" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/SecurityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/head.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/head.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Seller/seller.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Seller/seller.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/homepage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/homepage.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/editProfile.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/editProfile.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Security/login.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Security/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Register/registerpage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Register/registerpage.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/reset.css" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" />
     </list>
     <ignored path="SeeClope.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,11 +68,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_articles.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show_articles.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="92">
+              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_profile.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/seeClope/web/assets/js/profileCommentAjax.js" />
         <option value="$PROJECT_DIR$/seeClope/seeclop.sql" />
-        <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" />
         <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/ProfileController.php" />
         <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/seeClope/web/assets/js/modalPopUpPassword.js" />
@@ -144,6 +153,7 @@
         <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/editProfile.html.twig" />
         <option value="$PROJECT_DIR$/seeClope/web/assets/js/searchEngineAjax.js" />
         <option value="$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig" />
+        <option value="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" />
       </list>
     </option>
   </component>
@@ -636,6 +646,96 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlassesBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Articles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlassesBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeClope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlassesBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -921,18 +1021,18 @@
       <workItem from="1463995238673" duration="18009000" />
       <workItem from="1464123541581" duration="469000" />
       <workItem from="1464124333668" duration="17929000" />
-      <workItem from="1464204067982" duration="38146000" />
+      <workItem from="1464204067982" duration="38416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185605000" />
+    <option name="totallyTimeSpent" value="185875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1145,14 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1376,8 +1468,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seeClope/src/GlassesBundle/Resources/views/Articles/show_articles.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="92">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>

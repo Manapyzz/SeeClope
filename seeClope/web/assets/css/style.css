@@ -42,10 +42,10 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin: 17% 0 5% 10%;
+  margin: 8% 0 0 0;
   position: absolute;
   top: 0;
-  right: -60px; }
+  right: -90px; }
 
 #sidebar-btn span {
   height: 3px;
@@ -73,8 +73,7 @@
 .container {
   position: relative;
   background-color: #f5f5f5;
-  height: 100%;
-  padding-top: 10%; }
+  height: 100%; }
 
 /*---FIRST SECTION---*/
 .first {
@@ -233,7 +232,6 @@
 
 .textLink {
   font-size: 0.6rem;
-  /*margin-left: 12%;*/
   margin-bottom: 4%;
   display: none; }
 
@@ -265,107 +263,114 @@
 
 /*---SEARCH PAGE---*/
 .sectionResult {
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%; }
+  margin: 0 auto;
+  margin-top: 50px; }
 
 .sectionSearch {
-  width: 95%;
+  width: 310px;
+  margin: 0 auto;
   background-color: #fff;
-  border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%; }
+  border: 1px solid #efefef; }
+
+.blockSearchArticle {
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 10px; }
 
 .textSearch {
   font-family: MontserratRegular;
   display: inline-block;
   font-size: 0.8rem;
-  color: #5b5b5b;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  margin-top: 10%; }
+  color: #5b5b5b; }
 
 .fieldBrand {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 19px;
+  padding: 5px;
+  float: right;
+  width: 59%;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 20%;
-  margin-bottom: 5%;
   text-align: center; }
 
 .fiedlLeftCorrection {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 5px;
+  width: 55%;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 4%;
-  text-align: center; }
+  text-align: center;
+  float: right; }
 
 .fieldRightCorrection {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 5px;
+  float: right;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 1%;
   text-align: center; }
 
 .fieldGlassType {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 30px;
+  padding: 5px;
+  float: right;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 13%; }
+  width: 59%; }
 
 .fieldSex {
   border: 1px solid #d0d0d0;
-  padding: 4px 44px 4px 44px;
+  padding: 5px;
+  float: right;
+  width: 59%;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 26%;
   text-align: center; }
 
 .fieldColor {
   border: 1px solid #d0d0d0;
-  padding: 4px 21px 4px 21px;
+  padding: 5px;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 22%;
+  float: right;
+  width: 59%;
   text-align: center; }
 
 .fieldMinPrice {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 5px;
+  float: right;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 14%;
   text-align: center; }
 
 .fieldMaxPrice {
   border: 1px solid #d0d0d0;
-  padding: 4px 1px 4px 13px;
+  padding: 5px;
+  float: right;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 13%;
   text-align: center; }
 
 .fieldShape {
   border: 1px solid #d0d0d0;
-  padding: 4px 20px 4px 15px;
+  padding: 5px;
+  float: right;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 20%;
-  text-align: center; }
+  text-align: center;
+  width: 59%; }
 
-.searchSubmit {
+#search_search {
   border: none;
   background-color: #06c790;
   color: #fff;
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
-  margin: 15% 0 15% 25%; }
+  margin: 10px 0 40px 80px; }
 
 .titleResult {
   font-family: MontserratRegular;
@@ -456,11 +461,10 @@
 
 /*---VIEW ARTICLE---*/
 .sectionViewArticle {
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%; }
+  margin: 0 auto; }
 
 .titleArticleBrand {
   font-family: MontserratRegular;
@@ -567,101 +571,88 @@
 
 /*---SELL---*/
 .sellSection {
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%;
-  padding-top: 10%; }
+  margin: 0 auto; }
+
+.sell-block {
+  margin: 15px 0;
+  padding: 0 15px; }
 
 .textSell {
   font-family: MontserratRegular;
-  color: #5b5b5b;
-  margin-left: 5%;
-  margin-bottom: 5%; }
+  color: #5b5b5b; }
 
 .textSellImg {
   font-family: MontserratRegular;
-  color: #5b5b5b;
-  margin-left: 5%;
-  margin-bottom: 5%; }
+  color: #5b5b5b; }
 
 .fieldSellBrand {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 25%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellSex {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 32%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellShape {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 24%;
-  margin-bottom: 5%;
-  width: 51%; }
+  float: right;
+  width: 40%; }
 
 .sellLeftCorrection {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 4%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellRightCorrection {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 0%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellGlassDiameter {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 3%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellGlassBridge {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 10%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellGlassArm {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 16%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellGlassType {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  width: 51%; }
+  float: right;
+  width: 40%; }
 
 .sellColor {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 26%;
-  margin-bottom: 5%;
-  width: 51%; }
+  float: right;
+  width: 40%; }
 
 .sellPrice {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 27%;
-  margin-bottom: 5%;
-  width: 50%; }
+  float: right;
+  width: 40%; }
 
 .sellImageFile {
   font-family: MontserratRegular;
@@ -675,51 +666,49 @@
   color: #fff;
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
-  margin: 10% 0 10% 25%; }
+  margin: 10px 0 35px 75px; }
 
 /*---LOGIN---*/
 .sectionLogin {
-  width: 95%;
+  width: 225px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%; }
+  margin: 0 auto;
+  text-align: center; }
 
 .titleLogin {
   font-family: MontserratRegular;
   color: #757272;
-  margin: 40px 0px 40px 95px;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin: 20px 0; }
 
 .loginEmail {
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin: 5% 0 5% 20%;
-  text-align: center; }
+  text-align: center;
+  margin: 20px 0 30px 0; }
 
 .loginPassword {
   border: 1px solid #d0d0d0;
   padding: 4px 1px 4px 13px;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin: 5% 0 5% 20%; }
+  margin-bottom: 20px; }
 
 .blockBox {
   display: block;
   font-family: MontserratLight;
   color: #5b5b5b;
-  margin-left: 25%;
-  margin-bottom: 5%;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  margin-bottom: 10px; }
 
 .lostPassword {
   font-family: MontserratLight;
   display: inline-block;
   color: #5b5b5b;
-  font-size: 0.8rem;
-  margin-left: 25%; }
+  font-size: 0.8rem; }
 
 .loginSubmit {
   border: none;
@@ -727,33 +716,36 @@
   color: #fff;
   font-family: MontserratRegular;
   padding: 10px 50px 10px 50px;
-  margin: 10% 0 10% 20%; }
+  margin: 30px 0; }
 
 /*---PROFILE---*/
 .sectionProfile {
-  width: 95%;
+  width: 310px;
+  margin: 0 auto;
   background-color: #fff;
-  border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 5%; }
+  border: 1px solid #efefef; }
+
+.titleUser {
+  font-size: 1.4rem;
+  margin-bottom: 20px; }
+
+.rank {
+  font-family: MontserratRegular;
+  font-size: 0.8rem;
+  color: #5b5b5b; }
 
 .picProfil {
   height: 80px;
   width: 80px;
   border: 1px solid transparent;
   border-radius: 50px;
-  margin-left: 36%;
-  margin-bottom: 10%; }
+  margin-left: 110px;
+  margin-bottom: 40px;
+  margin-top: 20px; }
 
 .userInfos {
   font-family: MontserratHairline;
-  text-align: left;
-  margin-left: 30%;
-  margin-bottom: 4%; }
-
-.textProfile {
-  font-size: 0.8rem; }
+  text-align: center; }
 
 .linkEditProfile {
   background-color: #06c790;
@@ -762,9 +754,66 @@
   text-align: center;
   color: #fff;
   padding: 10px 0;
-  margin-left: 15%;
-  margin-bottom: 10%;
-  margin-top: 10%; }
+  margin: 25px 0 25px 50px; }
+
+.sectionComment {
+  width: 310px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-top: 40px; }
+
+.postTitleComment {
+  font-family: MontserratRegular;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #5b5b5b;
+  margin: 20px 0; }
+
+.rating {
+  font-size: 1.2rem;
+  font-family: MontserratRegular;
+  color: #5b5b5b; }
+
+.fieldRating {
+  width: 15%;
+  margin-left: 57px; }
+
+.reviews {
+  margin-top: 35px;
+  font-size: 1.2rem;
+  font-family: MontserratRegular;
+  color: #5b5b5b; }
+
+.areaComment {
+  margin-left: 50px; }
+
+#profile_comment_submit {
+  background-color: #06c790;
+  width: 50%;
+  font-family: MontserratRegular;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  margin: 40px 0 25px 80px;
+  border: none; }
+
+.sectionViewComment {
+  width: 310px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.blockComment {
+  font-family: MontserratLight; }
+
+.titleComment {
+  font-family: MontserratRegular;
+  color: #5b5b5b;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 25px 0; }
 
 .titleSell {
   text-align: center;
@@ -783,12 +832,12 @@
   padding-bottom: 5%; }
 
 .sectionSellUser {
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 5%; }
+  padding-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 30px; }
 
 .sellBlock {
   border-top: 1px solid #ededed;
@@ -828,12 +877,11 @@
   text-align: center; }
 
 .lastArticle {
-  width: 95%;
+  width: 310px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 10%; }
+  margin: 0 auto;
+  margin-top: 30px; }
 
 .lastPic {
   display: inline-block;
@@ -847,89 +895,94 @@
 
 /*---EDIT PROFILE---*/
 .sectionEditProfile {
-  width: 95%;
+  width: 290px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 10%; }
+  margin: 0 auto; }
+
+.blockEditProfil {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px; }
 
 .editLastname {
   border: 1px solid #d0d0d0;
   padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
-  margin-left: 15%;
-  width: 40%; }
+  width: 40%;
+  float: right; }
 
 .editFirstname {
   border: 1px solid #d0d0d0;
   padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
-  margin-left: 15%;
-  width: 40%; }
+  width: 40%;
+  float: right; }
 
 .editEditEmail {
   border: 1px solid #d0d0d0;
   padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
-  margin-left: 24%;
-  width: 40%; }
+  width: 40%;
+  float: right; }
 
 .editPasswordFirst {
   border: 1px solid #d0d0d0;
   padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
-  margin-left: 16%;
-  width: 40%; }
+  width: 40%;
+  float: right; }
 
 .editPasswordSecond {
   border: 1px solid #d0d0d0;
   padding: 4px 0;
   font-family: MontserratHairline;
   color: #5b5b5b;
-  margin-left: 0;
-  width: 40%; }
+  width: 40%;
+  float: right; }
 
 .textEditProfile {
   font-family: MontserratRegular;
   font-size: 0.8rem;
   display: inline-block;
-  color: #5b5b5b;
-  margin-right: 5%;
-  margin-bottom: 10%;
-  margin-left: 5%; }
+  color: #5b5b5b; }
 
 .editSubmit {
-  margin: 10% 10% 10% 26%;
+  margin: 10px 0 20px 80px;
   width: 50%;
-  padding: 6% 1% 6% 1%;
+  padding: 10px;
   border: none;
   background-color: #06c790;
   color: #fff;
   font-family: MontserratRegular; }
 
 .editFileImage {
-  margin: 0 10% 10% 0;
   border: none;
   color: #5b5b5b;
   font-family: MontserratRegular; }
 
 /*---REGISTER---*/
 .sectionRegister {
-  width: 95%;
+  width: 240px;
   background-color: #fff;
   border: 1px solid #efefef;
-  margin-left: 2%;
-  margin-bottom: 15%;
-  padding-top: 10%; }
+  margin: 0 auto; }
+
+.blockRegister {
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px; }
 
 .submitRegister {
-  margin: 10% 10% 10% 26%;
+  margin: 20px 20px 20px 65px;
   width: 50%;
-  padding: 6% 1% 6% 1%;
+  padding: 10px;
   border: none;
   background-color: #06c790;
   color: #fff;
@@ -938,49 +991,44 @@
 .textRegister {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 4%;
-  margin-bottom: 5%; }
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: 0; }
 
 .fieldUsername {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 22%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 .fieldLastname {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 23%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 .fieldFirstname {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 23%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 .fieldEmail {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 34%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 .fieldPasswordFirst {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 24%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 .fieldPasswordSecond {
   font-family: MontserratRegular;
   color: #5b5b5b;
-  margin-left: 4%;
-  margin-bottom: 5%;
+  float: right;
   width: 40%; }
 
 @media (min-width: 641px) {
@@ -1056,98 +1104,131 @@
     font-size: 1rem; }
 
   /*---LOGIN---*/
+  .sectionLogin {
+    width: 450px; }
+
   .titleLogin {
-    margin: 5% 0 5% 35%;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin: 50px 0; }
 
   .loginEmail {
-    margin: 5% 5% 5% 20%;
-    width: 50%;
     font-size: 1.4rem;
-    padding: 20px 10px 20px 10px; }
+    padding: 10px 0 10px 0;
+    margin: 40px 0 60px 0; }
 
   .loginPassword {
-    margin: 5% 5% 5% 20%;
-    width: 50%;
-    text-align: center;
+    width: 60%;
     font-size: 1.4rem;
-    padding: 20px 10px 20px 10px; }
+    padding: 10px 0 10px 0;
+    margin-bottom: 40px; }
 
   .blockBox {
-    margin-left: 30%;
-    margin-bottom: 5%;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-bottom: 10px; }
 
   .lostPassword {
-    margin-left: 30%;
     font-size: 1.2rem; }
 
   .loginSubmit {
-    padding: 20px 10px 20px 10px;
-    margin: 10% 0 10% 25%;
     width: 50%;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin: 60px; }
 
   /*---REGISTER---*/
+  .sectionRegister {
+    width: 460px; }
+
+  .blockRegister {
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0 30px; }
+
   .textRegister {
-    font-size: 1.4rem;
-    margin-left: 20%; }
+    font-size: 1.4rem; }
 
   .fieldUsername {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 17%; }
+    padding: 8px 0; }
 
   .fieldFirstname {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 17%; }
+    padding: 8px 0; }
 
   .fieldLastname {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 18%; }
+    padding: 8px 0; }
 
   .fieldEmail {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 25%; }
+    padding: 8px 0; }
 
   .fieldPasswordFirst {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 18%; }
+    padding: 8px 0; }
 
   .fieldPasswordSecond {
     width: 40%;
-    padding: 8px 0;
-    margin-left: 5%; }
+    padding: 8px 0; }
 
   .submitRegister {
     padding: 15px 10px;
-    margin: 10% 10% 10% 26%;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin: 50px 0 50px 120px; }
 
   /*---PROFILE---*/
+  .sectionProfile {
+    width: 500px; }
+
+  .rank {
+    font-size: 1rem; }
+
   .picProfil {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin-left: 40%; }
 
-  .userInfos {
-    margin-left: 35%; }
-
   .titleUser {
-    font-size: 1.5rem;
-    margin-bottom: 5%; }
-
-  .textProfile {
-    font-size: 1rem; }
+    font-size: 1.8rem; }
 
   .linkEditProfile {
     width: 50%;
     padding: 20px 0;
-    margin-left: 25%; }
+    margin: 40px 0 40px 130px; }
+
+  .postTitleComment {
+    font-size: 1.8rem;
+    margin: 30px 0; }
+
+  .rating {
+    font-size: 1.4rem;
+    margin-left: 70px; }
+
+  .reviews {
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 1.4rem; }
+
+  #profile_comment_submit {
+    font-size: 1.2rem;
+    margin: 40px 0 25px 140px; }
+
+  .sectionViewComment {
+    width: 500px; }
+
+  .titleComment {
+    font-size: 1.8rem;
+    margin: 40px 0; }
+
+  .blockComment {
+    font-size: 1.2rem;
+    margin-left: 60px; }
+
+  .sectionComment {
+    width: 500px; }
+
+  .sectionSellUser {
+    width: 500px; }
 
   .titleSell {
     font-size: 1.4rem; }
@@ -1161,8 +1242,7 @@
     height: 166px; }
 
   .blockInceptions {
-    width: 47%;
-    margin-left: 20%; }
+    margin-left: 88px; }
 
   .sellBrand {
     font-size: 1.2rem; }
@@ -1170,7 +1250,11 @@
   .viewSell {
     padding: 10px 0;
     font-size: 1rem;
-    margin-left: 11%; }
+    margin-left: 35px;
+    width: 50%; }
+
+  .lastArticle {
+    width: 500px; }
 
   .titleArticle {
     font-size: 1.4rem; }
@@ -1182,98 +1266,114 @@
     margin-left: 8%; }
 
   /*---EDIT PROFIL---*/
+  .sectionEditProfile {
+    width: 520px; }
+
+  .blockEditProfil {
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 40px; }
+
   .textEditProfile {
-    font-size: 1.4rem;
-    margin-left: 12%; }
+    font-size: 1.4rem; }
 
   .editFileImage {
     font-size: 1rem;
-    width: 54%; }
+    width: 80%; }
 
   .editLastname {
+    width: 45%;
     padding: 10px 0;
     font-size: 1.2rem;
     margin-left: 15%; }
 
   .editFirstname {
-    margin-left: 15%;
+    width: 45%;
     padding: 10px 0;
     font-size: 1.2rem; }
 
   .editEditEmail {
-    margin-left: 23%;
+    width: 45%;
     padding: 10px 0;
     font-size: 1.2rem; }
 
   .editPasswordFirst {
-    margin-left: 16%;
+    width: 45%;
     padding: 10px 0;
     font-size: 1.2rem; }
 
   .editPasswordSecond {
-    margin-left: 2%;
+    width: 45%;
     padding: 10px 0;
     font-size: 1.2rem; }
 
   .editSubmit {
+    margin: 10px 0 50px 130px;
     padding: 20px 0;
     font-size: 1.2rem; }
 
   /*---SEARCH PAGE---*/
+  .sectionSearch {
+    width: 500px; }
+
+  .blockSearchArticle {
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px 20px; }
+
   .textSearch {
-    margin-left: 20%;
     font-size: 1.4rem; }
 
   .fieldBrand {
     padding: 12px 0;
-    margin-left: 30%;
-    width: 30%; }
+    width: 50%; }
 
   .fiedlLeftCorrection {
-    margin-left: 16%;
     padding: 12px 0;
-    width: 30%; }
+    width: 50%; }
 
   .fieldRightCorrection {
-    margin-left: 13%;
     padding: 12px 0;
-    width: 30%; }
+    width: 50%; }
 
   .fieldGlassType {
-    margin-left: 25%;
     padding: 12px 0;
-    width: 30%; }
+    width: 50%; }
 
   .fieldSex {
     padding: 12px 0;
-    width: 30%;
-    margin-left: 36%; }
+    width: 50%; }
 
   .fieldColor {
     padding: 12px 0;
-    width: 30%;
-    margin-left: 33%; }
+    width: 50%; }
 
   .fieldMinPrice {
     padding: 12px 0;
-    width: 30%;
-    margin-left: 26%; }
+    width: 50%; }
 
   .fieldMaxPrice {
     padding: 12px 0;
-    width: 30%;
-    margin-left: 25%; }
+    width: 50%; }
 
   .fieldShape {
     padding: 12px 0;
-    width: 30%;
-    margin-left: 31%; }
+    width: 50%; }
 
-  .searchSubmit {
+  #search_search {
+    border: none;
+    background-color: #06c790;
+    color: #fff;
+    font-family: MontserratRegular;
     padding: 15px 0;
-    width: 50%;
-    font-size: 1.4rem;
-    margin: 15% 0 15% 25%; }
+    margin: 30px 0 40px 150px;
+    width: 40%;
+    font-size: 1.2rem; }
+
+  .sectionResult {
+    width: 500px; }
 
   .resultatLineLeft {
     width: 30%;
@@ -1317,6 +1417,9 @@
     margin-left: 35%; }
 
   /*---VIEW ARTICLE---*/
+  .sectionViewArticle {
+    width: 500px; }
+
   .titleArticleBrand {
     font-size: 2.4rem; }
 
@@ -1366,80 +1469,73 @@
     font-size: 1.4rem; }
 
   /*---SELL---*/
+  .sellSection {
+    width: 500px; }
+
+  .sell-block {
+    margin: 30px 0;
+    padding: 0 25px; }
+
   .textSell {
-    font-size: 1.6rem;
-    margin-left: 10%; }
+    font-size: 1.4rem; }
 
   .textSellImg {
-    font-size: 1.2rem;
-    margin-left: 10%; }
+    font-size: 1.2rem; }
 
   .fieldSellBrand {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 27%; }
+    padding: 10px 0; }
 
   .sellSex {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 32%; }
+    padding: 10px 0; }
 
   .sellShape {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 26%; }
+    padding: 10px 0; }
 
   .sellLeftCorrection {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 10%; }
+    padding: 10px 0; }
 
   .sellRightCorrection {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 6%; }
+    padding: 10px 0; }
 
   .sellGlassDiameter {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 9%; }
+    padding: 10px 0; }
 
   .sellGlassBridge {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 14%; }
+    padding: 10px 0; }
 
   .sellGlassArm {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 19%; }
+    padding: 10px 0; }
 
   .sellGlassType {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 18%; }
+    padding: 10px 0; }
 
   .sellColor {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 27%; }
+    padding: 10px 0; }
 
   .sellPrice {
     width: 45%;
     font-size: 1.2rem;
-    padding: 10px 0;
-    margin-left: 28%;
-    margin-bottom: 10%; }
+    padding: 10px 0; }
 
   .sellImageFile {
     width: 80%;
@@ -1450,20 +1546,13 @@
     padding: 20px 0;
     text-align: center;
     margin: 10% 0 10% 30%;
-    width: 40%;
+    width: 50%;
     font-size: 1.2rem; } }
-@media (min-width: 1045px) {
-  /*---CONTAINER---*/
-  .container {
-    padding: 0; }
-
+@media (min-width: 1024px) {
   /*---HEADER---*/
   .menu {
-    position: absolute;
     width: 100%;
-    z-index: 1;
-    opacity: 0.3;
-    background-color: #000; }
+    background-color: #efefef; }
 
   .desktopMenu li {
     display: inline-block; }
@@ -1483,7 +1572,7 @@
   .linkHomeMenu {
     font-family: MontserratRegular;
     font-size: 1.5rem;
-    color: #fff;
+    color: #06c790;
     margin-left: 3%; }
 
   .leftLogo {
@@ -1655,20 +1744,8 @@
 
   /*---LOGIN---*/
   .sectionLogin {
-    display: inline-block;
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: 15%;
-    margin-top: 15%; }
-
-  .loginEmail {
-    margin: 5% 5% 5% 23%; }
-
-  .loginPassword {
-    margin: 5% 5% 5% 23%; }
-
-  .loginSubmit {
-    margin: 10% 0 10% 26%; }
+    width: 450px;
+    margin: 10% auto; }
 
   /*---REGISTER---*/
   .sectionRegister {
@@ -1759,5 +1836,134 @@
 
   .picProfil {
     margin-top: 5%; } }
+@media (min-width: 1400px) {
+  /*---HOMEPAGE---*/
+  .linkHomeMenu {
+    font-size: 2.5rem;
+    margin-left: 3%;
+    margin-right: 2%; }
+
+  .title {
+    font-size: 6.5rem; }
+
+  .text {
+    font-size: 2rem; }
+
+  .textGlass {
+    left: 20%; }
+
+  .selectProduct {
+    margin: 0 auto;
+    margin-top: 10%; }
+
+  .secondText {
+    font-size: 1.8rem; }
+
+  .newProduct {
+    margin: 0 auto;
+    margin-top: 5%; }
+
+  .secondText {
+    font-size: 1.8rem;
+    margin: 5% 0; }
+
+  .sectionGlass {
+    margin: 0 auto;
+    margin-bottom: 10%; }
+
+  .footerTitle {
+    font-size: 2rem; }
+
+  .lineLeft {
+    width: 30%;
+    margin-left: 8%; }
+
+  .lineRight {
+    margin-right: 5%;
+    width: 30%; }
+
+  .textLink {
+    font-size: 1.4rem; }
+
+  .mention {
+    font-size: 1rem; }
+
+  .sectionLogin {
+    margin: 0 auto; }
+
+  /*---SEARCH---*/
+  .blockSearchArticle {
+    height: 55px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 140px; }
+
+  .sectionSearch {
+    width: 850px;
+    margin: 10% auto; }
+
+  .textSearch {
+    font-size: 2rem; }
+
+  .fieldBrand {
+    font-size: 1.2rem; }
+
+  .fiedlLeftCorrection {
+    font-size: 1.2rem; }
+
+  .fieldRightCorrection {
+    font-size: 1.2rem; }
+
+  .fieldGlassType {
+    font-size: 1.2rem; }
+
+  .fieldSex {
+    font-size: 1.2rem; }
+
+  .fieldColor {
+    font-size: 1.2rem; }
+
+  .fieldMinPrice {
+    font-size: 1.2rem; }
+
+  .fieldMaxPrice {
+    font-size: 1.2rem; }
+
+  .fieldShape {
+    font-size: 1.2rem; }
+
+  #search_search {
+    margin: 30px 0 40px 280px;
+    font-size: 1.6rem; }
+
+  /*---RESULT---*/
+  .sectionResult {
+    width: 850px;
+    margin: 10% auto; }
+
+  .titleResult {
+    font-size: 2.2rem; }
+
+  .blockBrand {
+    font-size: 2.2rem; }
+
+  .blockSex {
+    font-size: 1.6rem; }
+
+  .blockShape {
+    font-size: 1.6rem; }
+
+  .blockLeftCorrection {
+    font-size: 1.6rem; }
+
+  .blockPrice {
+    font-size: 1.5rem; }
+
+  .blockVendor {
+    font-size: 1.2rem; }
+
+  .blockLinkArticle {
+    font-size: 1.6rem;
+    margin-left: 40%; } }
 
 /*# sourceMappingURL=style.css.map */
