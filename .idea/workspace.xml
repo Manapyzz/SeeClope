@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849f058d-8f67-4787-95b6-12e41d9c0265" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seeClope/web/assets/img/basket-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/.sass-cache/2193c6287e07e90f38de1687607201e7a1e13e3e/style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Controller/ShoppingCartController.php" afterPath="$PROJECT_DIR$/seeClope/src/GlassesBundle/Controller/ShoppingCartController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Homepage/homepage.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Homepage/homepage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" afterPath="$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Profile/show_profile.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" afterPath="$PROJECT_DIR$/seeClope/web/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeClope/web/assets/js/searchEngineAjax.js" afterPath="$PROJECT_DIR$/seeClope/web/assets/js/searchEngineAjax.js" />
     </list>
     <ignored path="SeeClope.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +45,8 @@
       <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            <state relative-caret-position="140">
+              <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -943,12 +943,12 @@
       <workItem from="1463995238673" duration="18009000" />
       <workItem from="1464123541581" duration="469000" />
       <workItem from="1464124333668" duration="17929000" />
-      <workItem from="1464204067982" duration="43838000" />
+      <workItem from="1464204067982" duration="44005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191297000" />
+    <option name="totallyTimeSpent" value="191464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
@@ -960,7 +960,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1393,8 +1393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seeClope/src/UserBundle/Resources/views/Base/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="140">
+          <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
           <folding />
         </state>
       </provider>
