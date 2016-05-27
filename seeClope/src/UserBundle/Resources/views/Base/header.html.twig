@@ -5,7 +5,11 @@
             <li class="linkHomeMenu leftLogo"><a href="#">Recherche</a></li>
             <div class="blockLogoWhite"><img src="{{ asset('assets/img/black_logo.png') }}"></div>
             <li class="linkHomeMenu rightLogo"><a href="#">Vendre</a></li>
-            <li class="linkHomeMenu"><a href="#">Connexion</a></li>
+            {% if app.user %}
+                <li class="linkHomeMenu"><a id="login" href="/logout">Deconnexion</a></li>
+            {% else %}
+                <li class="linkHomeMenu"><a id="login" href="/login">Connexion</a></li>
+            {% endif %}
         </ul>
         <div id="sidebar">
             <ul class="main-menu">
@@ -44,4 +48,5 @@
         <div class="blockLogo"><a href="/"><img src="{{ asset('assets/img/black_logo.png') }}"></a></div>
         <div class="blockMarket"><a href="#"><img src="{{ asset('assets/img/market.jpg') }}"></a></div>
     </nav>
+
 </header>

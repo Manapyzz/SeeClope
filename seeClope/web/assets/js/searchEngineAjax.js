@@ -7,7 +7,7 @@ $(function () {
             type: 'POST',
             dataType: 'json',
             success: function() {
-                console.log('ta meère ');
+                console.log('success');
             },
             error: function () {
                 console.log('error');

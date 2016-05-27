@@ -13,6 +13,11 @@ class ShoppingCartController extends Controller
 {
     public function showAction(Request $request)
     {
+
+        $session = $this->container->get('session');
+
+        var_dump($session->get('panier'));
+
         return $this->render(
             'GlassesBundle:ShoppingCart:show_shopping_cart.html.twig'
         );
@@ -24,53 +29,22 @@ class ShoppingCartController extends Controller
         $glasses = $em->getRepository('EntityBundle:Glasses')
             ->findOneById($id);
 
+        var_dump($glasses);
 
-        $cookies = $request->cookies->all();
-        $response = new Response('test');
+        $session = $this->container->get('session');
 
-        if(isset($brand))
+        if(!$session->has('panier'))
         {
-            unset($brand);
-        }
-        else
-        {
-            $brand = new Cookie('brand[0]', $glasses->getBrand());
-            array_push($cookies, $response->headers->setCookie($brand));
+            $panier = $session->get('panier');
+            $session->replace(array('panier' => $panier." ".$glasses->getBrand()));
         }
 
-        if(isset($cookies['brand']))
-        {
-            var_dump('exist');
-            $i = 0;
-
-            if(count($cookies['brand']) == 1)
-            {
-                $i = 1;
-            }
-
-            if(count($cookies['brand']) > 1)
-            {
-                $i = count($cookies['brand']) +1;
-            }
-
-            var_dump($cookies['brand']);
-        }
-        else
-        {
-            var_dump('not exist');
-            array_push($cookies, $response->headers->setCookie($brand));
-            var_dump($cookies);
-        }
+        $panier = $session->get('panier');
 
 
-       /* $response = new Response('test');
-        $brand = new Cookie('brand['.$i.']', $glasses->getBrand());
 
-        array_push($cookies, $response->headers->setCookie($brand));
+        $session->set('panier', $panier);
 
-        $response->sendHeaders();
-
-
-        return $this->redirectToRoute('shopping_cart_show');*/
+        return $this->redirectToRoute('shopping_cart_show');
     }
 }
